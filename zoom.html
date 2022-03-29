@@ -18,7 +18,7 @@
 		.subject__item {
 			width: 20%;
 			border: 1px solid #27282c;
-			padding: 20px 10px;
+			padding: 5px;
 			font-size: 20px;
 		}
 		.subject__item_link {
@@ -27,6 +27,27 @@
 			background: #75797c;
 			padding: 10px 30px;
 			border-radius: 10px;
+		}
+		@media screen and (max-width: 785px) {
+			.subject__items {
+				align-items: stretch;
+				flex-wrap: wrap;
+				border: 1px solid #27282c;
+			}
+			.subject__items:first-child {
+				display: none;
+			}
+			.subject__item {
+				border: none;
+				width: 100%;
+				padding: 10px;
+				font-size: 13px;
+			}
+			.subject__item_link {
+				padding: 8px 15px;
+				display: inline-block;
+				margin-bottom: 10px;
+			}
 		}
 	</style>
 </head>
@@ -58,12 +79,51 @@
 			</div>
 		</div>
 		<div class="subject__items">
+			<div class="subject__item">Английский</div>
+			<div class="subject__item">Кульматова Чолпон Эпкиновна</div>
+			<div class="subject__item">+996 707 33 74 37</div>
+			<div class="subject__item">Среда 16:40</div>
+			<div class="subject__item">
+				Google Meet
+			</div>
+		</div>
+		<div class="subject__items">
 			<div class="subject__item">Управление проектами</div>
 			<div class="subject__item">Жилкина Наталья Павловна</div>
 			<div class="subject__item">pavlova_msb@mail.ru</div>
 			<div class="subject__item">Среда 18:10</div>
 			<div class="subject__item">
 				<a href="https://us04web.zoom.us/j/73720054367?pwd=-gONr_eluE__QnpBa6RpcWorZJZMho.1" class="subject__item_link" target="_blank">Перейти</a>
+			</div>
+		</div>
+		<div class="subject__items">
+			<div class="subject__item">Методология ПИ</div>
+			<div class="subject__item">Манжикова Светлана Цибековна</div>
+			<div class="subject__item">
+				+996 700 68 10 81<br>
+				msvetlana_88@mail.ru
+			</div>
+			<div class="subject__item">Четверг 16:40</div>
+			<div class="subject__item">
+				ТИМС
+			</div>
+		</div>
+		<div class="subject__items">
+			<div class="subject__item">Английский</div>
+			<div class="subject__item">Кульматова Чолпон Эпкиновна</div>
+			<div class="subject__item">+996 707 33 74 37</div>
+			<div class="subject__item">Суббота 9:00</div>
+			<div class="subject__item">
+				Google Meet
+			</div>
+		</div>
+		<div class="subject__items">
+			<div class="subject__item">СИИ</div>
+			<div class="subject__item">Верзунов Сергей Николаевич</div>
+			<div class="subject__item"></div>
+			<div class="subject__item">Суббота 10:40</div>
+			<div class="subject__item">
+				<a href="https://teams.microsoft.com/l/meetup-join/19%3aNflfx-eJ8IY2gq_NL3UBuU9xPcqSrKULtBfzHx8TUV41%40thread.tacv2/1644640587351?context=%7b%22Tid%22%3a%220fa47dcc-596c-48b9-8499-29008e23d2ca%22%2c%22Oid%22%3a%22fb97bb74-b717-4a5f-bfeb-be963dee4c75%22%7d" class="subject__item_link" target="_blank">Перейти в ТИМС</a>
 			</div>
 		</div>
 	</div>
