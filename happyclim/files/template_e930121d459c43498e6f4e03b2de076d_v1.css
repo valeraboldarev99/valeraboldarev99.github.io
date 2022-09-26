@@ -1056,7 +1056,11 @@ a {
         margin: 4px 16px; } }
     .header-logo img {
       display: block;
-      width: 100%; }
+      width: 50%; }
+      @media screen and (max-width: 580px) {
+         .header-logo img {
+            display: block;
+            width: 100%; } }
   .header-menu {
     flex: 1 1 auto;
     background: #b1166e;
@@ -1341,15 +1345,31 @@ a {
   position: relative;
   height: 820px;
   padding-top: 60px;
-  background: url(bg-image.jpg)  center 100px no-repeat;
+  background: url(bg-image.jpg)  center 60px no-repeat;
   background-size: cover;
   z-index: 2; }
+  .head img {
+    width: 100%;
+    height: auto;
+    max-height: 90%;
+    position: absolute;
+    object-fit: cover;
+  }
   @media screen and (max-width: 1140px) {
     .head {
-      height: auto;
-      background: url(bg-image.jpg)  center 60px no-repeat;
-      background-size: contain;
+      height: 450px;
+      background: url(bg-image.jpg)  center 45px no-repeat;
+      background-size: cover;
+      margin-bottom: 270px;
        } }
+   @media screen and (max-width: 580px) {
+    .head {
+      height: 360px;
+      background: url(bg-image.jpg)  center 45px no-repeat;
+      background-size: cover;
+      margin-bottom: 300px;
+       }
+    }
   .head-content {
     position: relative;
     max-width: 1200px;
@@ -1361,8 +1381,15 @@ a {
         text-align: right; }
     @media screen and (max-width: 1140px) {
       .head-content {
-        padding: 175px 16px 30px 16px;
-        text-align: center; } }
+       padding: 0;
+       text-align: center;
+       bottom: -320px; } }
+    @media screen and (max-width: 580px) {
+       .head-content {
+       padding: 0;
+       text-align: center;
+       bottom: -230px; } }
+    }
   .head__title {
     font-size: 45px;
     font-family: "FuturaRound";
@@ -1418,7 +1445,7 @@ a {
         background-size: contain;
         transform: translateX(-50%); }
       .head__img_block {
-        top: 260px;
+        top: 80px;
         right: 50%;
         width: 100%;
         transform: translateX(50%); } }
@@ -1515,7 +1542,7 @@ a {
 .compose {
   position: relative;
   background-color: #f6f7fb;
-  background: url(/local/templates/happyclim/styles/../assets/img/section-1.jpg) 50% 50% no-repeat;
+  background: url(section-1.jpg) 50% 50% no-repeat;
   background-size: cover;
   height: 986px;
   margin-top: -170px;
@@ -1572,7 +1599,7 @@ a {
     display: flex;
     flex-direction: row;
     width: 622px;
-    margin-left: auto;
+    margin-left: 0;
     border-bottom: 2px solid #31332d;
     padding-bottom: 14px;
     margin-bottom: 20px; }
@@ -1616,7 +1643,7 @@ a {
         text-shadow: 0px 3px 43px rgba(0, 0, 0, 0.11); }
   .compose-table {
     width: 622px;
-    margin: 0 0 24px auto; }
+    margin: 0 0 24px 0; }
     @media screen and (max-width: 1140px) {
       .compose-table {
         width: 100%;
@@ -1747,7 +1774,7 @@ a {
 .heir {
   position: relative;
   background-color: #f6f7fb;
-  background: url(/local/templates/happyclim/styles/../assets/img/section-2.jpg) 50% 50% no-repeat;
+  background: url(section-2.jpg) 50% 50% no-repeat;
   background-size: cover;
   height: 907px;
   display: flex;
@@ -1807,7 +1834,7 @@ a {
 .family {
   position: relative;
   background-color: #f6f7fb;
-  background: url(/local/templates/happyclim/styles/../assets/img/section-3.jpg) 50% 50% no-repeat;
+  background: url(section-3.jpg) 50% 50% no-repeat;
   background-size: cover;
   /*height: 907px;*/
   height: 1145px;
