@@ -1,13 +1,10 @@
-<svg width="25.000000000000004" height="20" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <title/>
- <desc/>
+<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
 
+ <title/>
  <g>
   <title>Layer 1</title>
-  <g id="TabBar-Icons" fill-rule="evenodd" fill="none">
-   <g id="Hamburger-Round" fill="#000000">
-    <path fill="#373737" id="Hamburger" d="m0,2c0,-1.10457 0.88976,-2 2.00359,-2l20.99282,0c1.10655,0 2.00359,0.88773 2.00359,2c0,1.10457 -0.88976,2 -2.00359,2l-20.99282,0c-1.10655,0 -2.00359,-0.88773 -2.00359,-2l0,0zm0,8c0,-1.10457 0.88976,-2 2.00359,-2l20.99282,0c1.10655,0 2.00359,0.88773 2.00359,2c0,1.10457 -0.88976,2 -2.00359,2l-20.99282,0c-1.10655,0 -2.00359,-0.88773 -2.00359,-2l0,0zm0,8c0,-1.10457 0.88976,-2 2.00359,-2l20.99282,0c1.10655,0 2.00359,0.88773 2.00359,2c0,1.10457 -0.88976,2 -2.00359,2l-20.99282,0c-1.10655,0 -2.00359,-0.88773 -2.00359,-2l0,0z"/>
-   </g>
-  </g>
+  <line id="svg_1" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke="#373737" fill="none" y2="10" y1="10" x2="47" x1="1" class="cls-1"/>
+  <line id="svg_2" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke="#373737" fill="none" y2="24" y1="24" x2="47" x1="1" class="cls-1"/>
+  <line id="svg_3" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke="#373737" fill="none" y2="38" y1="38" x2="47" x1="1" class="cls-1"/>
  </g>
 </svg>
