@@ -443,11 +443,11 @@ body {
 }
 
 .footer__item {
-	width: 23%;
+	/*width: 24%;*/
 }
 
 .footer__item:first-child {
-	width: 27%;
+	/*width: 28%;*/
 }
 
 .footer__item_header {
@@ -488,10 +488,9 @@ body {
 .footer__contacts_link {
 	color: #fff;
 	display: inline-block;
-	margin-left: 23px;
+	margin-left: 25px;
 	margin-bottom: 20px;
 	position: relative;
-	max-width: 210px;
 }
 
 .footer__contacts_link:before {
