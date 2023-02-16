@@ -50,6 +50,48 @@ $(document).ready(function () {
 		}
 		return false
 	});
-	
+
+	// слaйдер на странице продукта
+		$('.product__slider__small').slick({
+			slidesToScroll:1,
+			slidesToShow:7,
+			// autoplay: true,
+			autoplaySpeed: 3000,
+			pauseOnHover:true,
+			arrows:false,
+			draggable:false,
+			dots:false,
+			focusOnSelect: true,
+			asNavFor: '.product__slider__big',
+			responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 6,
+					arrows:false,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 780,
+				settings: {
+					slidesToShow: 5,
+					vertical : false,
+					slidesToScroll: 1
+				}
+			 },
+		]
+		});
+
+		$('.product__slider__big').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: true,
+			dots:false,
+			draggable:false,
+			// autoplay: true,
+			fade: true,
+			asNavFor: '.product__slider__small'
+		});
 
 });

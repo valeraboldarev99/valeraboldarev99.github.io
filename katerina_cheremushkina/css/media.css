@@ -521,6 +521,11 @@
 		margin: 35px 0 25px 0;
 	}
 
+	.ms-menu-items {
+		margin: 0;
+		padding: 0;
+	}
+
 	.ms-menu {
 		font-size: 16px;
 		font-weight: 500;
