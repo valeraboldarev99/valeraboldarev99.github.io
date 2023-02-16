@@ -65,9 +65,9 @@ $(document).ready(function () {
 			asNavFor: '.product__slider__big',
 			responsive: [
 			{
-				breakpoint: 1200,
+				breakpoint: 1300,
 				settings: {
-					slidesToShow: 6,
+					slidesToShow: 4,
 					arrows:false,
 					slidesToScroll: 1
 				}
@@ -75,7 +75,7 @@ $(document).ready(function () {
 			{
 				breakpoint: 780,
 				settings: {
-					slidesToShow: 5,
+					slidesToShow: 4,
 					vertical : false,
 					slidesToScroll: 1
 				}
