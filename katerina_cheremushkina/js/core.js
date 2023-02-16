@@ -55,7 +55,7 @@ $(document).ready(function () {
 		$('.product__slider__small').slick({
 			slidesToScroll:1,
 			slidesToShow:7,
-			// autoplay: true,
+			autoplay: true,
 			autoplaySpeed: 3000,
 			pauseOnHover:true,
 			arrows:false,
