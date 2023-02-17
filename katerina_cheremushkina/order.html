@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Katerina Cheremushkina | Корзина</title>
+	<title>Katerina Cheremushkina | Оформление заказа</title>
 	<link rel="stylesheet" href="css/slick.css"/>
 	<link rel="stylesheet" href="css/jquery.fancybox.css"/>
 	<link rel="stylesheet" href="css/reset.css">
@@ -78,7 +78,7 @@
 										<a href="#" class="header__menu_link">Как выбрать размер</a>
 									</li>
 									<li class="header__menu_item">
-										<a href="#" class="header__menu_link act">Корзина</a>
+										<a href="#" class="header__menu_link">Корзина</a>
 									</li>
 									<li class="header__menu_item">
 										<a href="#" class="header__menu_link">Контакты</a>
@@ -96,161 +96,101 @@
 		<!-- end page__header -->
 		<main class="page__main">
 			<div class="wrapper">
-				<div class="products__block">
-					<h1>Корзина</h1>
-					<div class="basket__items">
-						<div class="basket__item">
-							<div class="basket__item_block basket__item_delete">
-								<p class="basket__text"> </p>
-							</div>
-							<div class="basket__item_block basket__item_product">
-								<p class="basket__text">Товар</p>
-							</div>
-							<div class="basket__item_block basket__item_price">
-								<p class="basket__text">Цена</p>
-							</div>
-							<div class="basket__item_block basket__item_quality">
-								<p class="basket__text">Количество</p>
-							</div>
-							<div class="basket__item_block basket__item_total-price">
-								<p class="basket__text">Итого</p>
-							</div>
+				<h1>Оформление заказа</h1>
+				<div class="order__block">
+					<div class="order__block_item order__block_item_form">
+						<div class="order__form_block">
+							<form action="#" class="order__form">
+								<div class="order_form_item">
+									<label for="name" class="order__form_label">Имя*</label>
+									<input type="text" id="name" name="name" class="order__form_input" required="required">
+								</div>
+								<div class="order_form_item">
+									<label for="lastname" class="order__form_label">Фамилия*</label>
+									<input type="text" id="lastname" name="lastname" class="order__form_input" required="required">
+								</div>
+								<div class="order_form_item">
+									<label for="phone" class="order__form_label">Телефон*</label>
+									<input type="text" id="phone" name="phone" class="order__form_input" required="required">
+								</div>
+								<div class="order_form_item">
+									<label for="email" class="order__form_label">Emai*</label>
+									<input type="email" id="email" name="email" class="order__form_input"  required="required">
+								</div>
+
+								<div class="order_form_item order_form_item-big">
+									<label for="delivery" class="order__form_label">Доставка</label>
+									<select name="delivery" id="" class="order__form_input">
+										<option value="1">Доставка</option>
+										<option value="2">Самовывоз</option>
+									</select>
+								</div>
+
+								<div class="order_form_item order_form_item-big">
+									<label for="comment" class="order__form_label">Комментарий к заказу <small>(необязательно)</small></label>
+									<textarea name="comment" id="comment" placeholder="Примечания к вашему заказу. Например особые пожелания отделу доставки" class="order__form_input order__form_textarea"></textarea>
+								</div>
+								<div class="order_form_item order_form_item-big">
+									<button class="order__btn btn">Подтвердить заказ</button>
+								</div>
+							</form>
 						</div>
-
-						<div class="basket__item">
-							<div class="basket__item_block basket__item_delete">
-								<a href="#" class="basket__delete_btn" onclick="alert('Вы уверены, что хотите удалить товар из корзины?')"></a>
-							</div>
-							<div class="basket__item_block basket__item_product">
-								<div class="basket__item_pic">
-									<img src="img/temp/products/5.png" alt="title">
-								</div>
-								<div class="basket__item_info">
-									<p class="basket__text product__name">Темная футболка</p>
-									<p class="basket__text">Размер: <span id="product_size">51</span></p>
-									<p class="basket__text">Рост: <span id="product_size">171</span></p>
-								</div>
-
-								<div class="basket__item_mob">
-									<div class="basket__mob_item">
-										<p class="basket__text">Цена: </p>
-										<p class="basket__text">20 000 сом</p>
+					</div>
+					<div class="order__block_item order__block_item_info">
+						<div class="order__block_info">
+							<h2>Ваш заказ</h2>
+							<div class="order__products">
+								<div class="order__products_items">
+									<div class="order__products_item">
+										<div class="order__products_name">Товар</div>
+										<div class="order__products_quality">Количество</div>
+										<div class="order__products_total_price">Стоимость</div>
 									</div>
-									<div class="basket__mob_item">
-										<p class="basket__text">Количество: </p>
-										<input type="number" min="1" value="1" id="js-basket__quality" class="basket__quality_input" onchange="alert('При изменении количества итоговая цена будет меняться')">
+									<div class="order__products_item">
+										<div class="order__products_name">
+											<span>Темная футболка; 51; 171;</span>
+											<div class="order__products_mob">
+												<p class="basket__text">Количество: <span>1</span></p>
+												<p class="basket__text">Стоимость: <span>20 000</span></p>
+											</div>
+										</div>
+										<div class="order__products_quality">1</div>
+										<div class="order__products_total_price">20 000</div>
 									</div>
-									<div class="basket__mob_item">
-										<p class="basket__text">Итого: </p>
-										<p class="basket__text">20 000 сом</p>
+									<div class="order__products_item">
+										<div class="order__products_name">
+											<span>Black Meaning; 34; 158;</span>
+											<div class="order__products_mob">
+												<p class="basket__text">Количество: <span>2</span></p>
+												<p class="basket__text">Стоимость: <span>17 000</span></p>
+											</div>
+										</div>
+										<div class="order__products_quality">2</div>
+										<div class="order__products_total_price">17 000</div>
 									</div>
-								</div>
-
-							</div>
-							<div class="basket__item_block basket__item_price">
-								<p class="basket__text">20 000 сом</p>
-							</div>
-							<div class="basket__item_block basket__item_quality">
-								<input type="number" min="1" value="1" id="js-basket__quality" class="basket__quality_input" onchange="alert('При изменении количества итоговая цена будет меняться')">
-							</div>
-							<div class="basket__item_block basket__item_total-price">
-								<p class="basket__text">20 000 сом</p>
-							</div>
-						</div>
-
-						<div class="basket__item">
-							<div class="basket__item_block basket__item_delete">
-								<a href="#" class="basket__delete_btn" onclick="alert('Вы уверены, что хотите удалить товар из корзины?')"></a>
-							</div>
-							<div class="basket__item_block basket__item_product">
-								<div class="basket__item_pic">
-									<img src="img/temp/products/11.png" alt="title">
-								</div>
-								<div class="basket__item_info">
-									<p class="basket__text product__name">Black Meaning</p>
-									<p class="basket__text">Размер: <span id="product_size">34</span></p>
-									<p class="basket__text">Рост: <span id="product_size">158</span></p>
-								</div>
-
-								<div class="basket__item_mob">
-									<div class="basket__mob_item">
-										<p class="basket__text">Цена: </p>
-										<p class="basket__text">8 5000 сом</p>
+									<div class="order__products_item">
+										<div class="order__products_name">
+											<span>Темная футболка; 43; 163;</span>
+											<div class="order__products_mob">
+												<p class="basket__text">Количество: <span>1</span></p>
+												<p class="basket__text">Стоимость: <span>12 000</span></p>
+											</div>
+										</div>
+										<div class="order__products_quality">1</div>
+										<div class="order__products_total_price">12 000</div>
 									</div>
-									<div class="basket__mob_item">
-										<p class="basket__text">Количество: </p>
-										<input type="number" min="1" value="1" id="js-basket__quality" class="basket__quality_input" onchange="alert('При изменении количества итоговая цена будет меняться')">
-									</div>
-									<div class="basket__mob_item">
-										<p class="basket__text">Итого: </p>
-										<p class="basket__text">8 500 сом</p>
+									<div class="order__products_item order__products_item-total">
+										<div class="order__products_name">
+											<span>Итого</span>
+										</div>
+										<div class="order__products_quality">4</div>
+										<div class="order__products_total_price total_price_mob">49 000</div>
 									</div>
 								</div>
-
-							</div>
-							<div class="basket__item_block basket__item_price">
-								<p class="basket__text">8 500 сом</p>
-							</div>
-							<div class="basket__item_block basket__item_quality">
-								<input type="number" min="1" value="1" id="js-basket__quality" class="basket__quality_input" onchange="alert('При изменении количества итоговая цена будет меняться')">
-							</div>
-							<div class="basket__item_block basket__item_total-price">
-								<p class="basket__text">8 500 сом</p>
-							</div>
-						</div>
-
-						<div class="basket__item">
-							<div class="basket__item_block basket__item_delete">
-								<a href="#" class="basket__delete_btn" onclick="alert('Вы уверены, что хотите удалить товар из корзины?')"></a>
-							</div>
-							<div class="basket__item_block basket__item_product">
-								<div class="basket__item_pic">
-									<img src="img/temp/products/4.png" alt="title">
-								</div>
-								<div class="basket__item_info">
-									<p class="basket__text product__name">White t-shirt</p>
-									<p class="basket__text">Размер: <span id="product_size">43</span></p>
-									<p class="basket__text">Рост: <span id="product_size">163</span></p>
-								</div>
-
-								<div class="basket__item_mob">
-									<div class="basket__mob_item">
-										<p class="basket__text">Цена: </p>
-										<p class="basket__text">12 000 сом</p>
-									</div>
-									<div class="basket__mob_item">
-										<p class="basket__text">Количество: </p>
-										<input type="number" min="1" value="1" id="js-basket__quality" class="basket__quality_input" onchange="alert('При изменении количества итоговая цена будет меняться')">
-									</div>
-									<div class="basket__mob_item">
-										<p class="basket__text">Итого: </p>
-										<p class="basket__text">12 000 сом</p>
-									</div>
-								</div>
-
-							</div>
-							<div class="basket__item_block basket__item_price">
-								<p class="basket__text">12 000 сом</p>
-							</div>
-							<div class="basket__item_block basket__item_quality">
-								<input type="number" min="1" value="1" id="js-basket__quality" class="basket__quality_input" onchange="alert('При изменении количества итоговая цена будет меняться')">
-							</div>
-							<div class="basket__item_block basket__item_total-price">
-								<p class="basket__text">12 000 сом</p>
 							</div>
 						</div>
 					</div>
-					<!-- end basket__items -->
-					<div class="total__info">
-						<div class="total__info_block">
-							<h3 class="total__info_header">Итого:</h3>
-							<p class="total__info_price">40 500 сом</p>
-							<div class="basket_btn btn">Продолжить</div>
-						</div>
-					</div>
-					<!-- end total__info -->
 				</div>
-				<!-- end products__block -->
 			</div>
 			<!-- end wrapper -->
 		</main>
