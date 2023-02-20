@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Katerina Cheremushkina | Оформление заказа</title>
+	<title>Katerina Cheremushkina | Авторизация</title>
 	<link rel="stylesheet" href="css/slick.css"/>
 	<link rel="stylesheet" href="css/jquery.fancybox.css"/>
 	<link rel="stylesheet" href="css/reset.css">
@@ -78,7 +78,7 @@
 										<a href="#" class="header__menu_link">Как выбрать размер</a>
 									</li>
 									<li class="header__menu_item">
-										<a href="#" class="header__menu_link">Корзина</a>
+										<a href="#" class="header__menu_link act">Корзина</a>
 									</li>
 									<li class="header__menu_item">
 										<a href="#" class="header__menu_link">Контакты</a>
@@ -96,109 +96,78 @@
 		<!-- end page__header -->
 		<main class="page__main">
 			<div class="wrapper">
-				<h1>Оформление заказа</h1>
-				<div class="order__block">
-					<div class="order__block_item order__block_item_form">
-						<div class="order__form_block">
-							<form action="#" class="order__form">
-								<div class="order_form_item">
-									<label for="name" class="form__label order__form_label">Имя*</label>
-									<input type="text" id="name" name="name" class="form__input order__form_input" required="required">
-								</div>
-								<div class="order_form_item">
-									<label for="lastname" class="form__label order__form_label">Фамилия*</label>
-									<input type="text" id="lastname" name="lastname" class="form__input order__form_input" required="required">
-								</div>
-								<div class="order_form_item">
-									<label for="phone" class="form__label order__form_label">Телефон*</label>
-									<input type="text" id="phone" name="phone" class="form__input order__form_input" required="required">
-								</div>
-								<div class="order_form_item">
-									<label for="email" class="form__label order__form_label">Emai*</label>
-									<input type="email" id="email" name="email" class="form__input order__form_input"  required="required">
-								</div>
+				<div class="auth__block">
+					<div class="tabs">
+						<input  class="tabs-input" id="tab1" type="radio" name="tabs" checked>
+						<label class="tabs-label" for="tab1" title="Войти"><span>Войти</span></label>
 
-								<div class="order_form_item order_form_item-big">
-									<label for="delivery" class="form__label order__form_label">Доставка</label>
-									<select name="delivery" id="" class="form__input order__form_input">
-										<option value="1">Доставка</option>
-										<option value="2">Самовывоз</option>
-									</select>
-								</div>
+						<input  class="tabs-input" id="tab2" type="radio" name="tabs">
+						<label class="tabs-label last" for="tab2" title="Регистрация"><span>Регистрация</span></label>
 
-								<div class="order_form_item order_form_item-big">
-									<label for="payment_method" class="form__label order__form_label">Способ оплаты</label>
-									<select name="payment_method" id="" class="form__input order__form_input">
-										<option value="1">Наличные</option>
-										<option value="2">Картов</option>
-									</select>
-								</div>
+						<div class="sections" id="content1">
+							<div class="login__form">
+								<form action="#">
+									<div class="auth__form_item">
+										<label for="login_email" class="form__label">E-mail</label>
+										<input type="email" id="login_email" class="form__input" name="email" required>
+									</div>
+									<div class="auth__form_item password__block">
+										<label for="login_password" class="form__label">Пароль</label>
+										<input type="password" id="login_password" class="form__input password__input" name="login_password" required>
+										<div class="eye"></div>
+									</div>
+									<p>
+										<a href="#" class="form__link">Забыли пароль?</a>
+									</p>
+									<button class="btn">Войти</button>
+								</form>
+							</div>
+						</div>
+						<!-- end content1 -->
 
-								<div class="order_form_item order_form_item-big">
-									<label for="comment" class="form__label order__form_label">Комментарий к заказу <small>(необязательно)</small></label>
-									<textarea name="comment" id="comment" placeholder="Примечания к вашему заказу. Например особые пожелания отделу доставки" class="form__input order__form_input order__form_textarea"></textarea>
+						<div class="sections" id="content2">
+							<form action="#" class="register__form">
+								<div class="auth__form_item">
+									<label for="name" class="form__label">Имя*</label>
+									<input type="text" id="name" name="name" class="form__input" required>
 								</div>
-								<div class="order_form_item order_form_item-big">
-									<button class="order__btn btn">Подтвердить заказ</button>
+								<div class="auth__form_item">
+									<label for="lastname" class="form__label">Фамилия*</label>
+									<input type="text" id="lastname" name="lastname" class="form__input" required>
+								</div>
+								<div class="auth__form_item">
+									<label for="e-mail" class="form__label">E-mail*</label>
+									<input type="email" id="e-mail" name="e-mail" class="form__input" required>
+								</div>
+								<div class="auth__form_item">
+									<label for="phone" class="form__label">Телефон*</label>
+									<input type="text" id="phone" name="phone" class="form__input" required>
+								</div>
+								<div class="auth__form_item">
+									<label for="passwordreg" class="form__label">Пароль*</label>
+									<input type="password" id="passwordreg" name="password" class="form__input" required>
+								</div>
+								<div class="auth__form_item">
+									<label for="passwordcomf" class="form__label">Повторите пароль*</label>
+									<input type="password" id="passwordcomf" name="password_comf" class="form__input" required>
+								</div>
+								<div class="auth__form_item_big">
+									<label for="address" class="form__label">Адрес*</label>
+									<input type="text" id="address" name="address" class="form__input" required>
+								</div>
+								<p class="auth__text auth__footer">
+									Кликнув на "Зарегистрироваться", Вы соглашаетесь с <a href="#" class="auth__link">политикой безопасности и конфиденциальности</a>
+								</p>
+								<div class="register__btn">
+									<button class="btn">Зарегистрироваться</button>
 								</div>
 							</form>
 						</div>
+						<!-- end content2 -->
 					</div>
-					<div class="order__block_item order__block_item_info">
-						<div class="order__block_info">
-							<h2>Ваш заказ</h2>
-							<div class="order__products">
-								<div class="order__products_items">
-									<div class="order__products_item">
-										<div class="order__products_name">Товар</div>
-										<div class="order__products_quality">Количество</div>
-										<div class="order__products_total_price">Стоимость</div>
-									</div>
-									<div class="order__products_item">
-										<div class="order__products_name">
-											<span>Темная футболка; 51; 171;</span>
-											<div class="order__products_mob">
-												<p class="basket__text">Количество: <span>1</span></p>
-												<p class="basket__text">Стоимость: <span>20 000</span></p>
-											</div>
-										</div>
-										<div class="order__products_quality">1</div>
-										<div class="order__products_total_price">20 000</div>
-									</div>
-									<div class="order__products_item">
-										<div class="order__products_name">
-											<span>Black Meaning; 34; 158;</span>
-											<div class="order__products_mob">
-												<p class="basket__text">Количество: <span>2</span></p>
-												<p class="basket__text">Стоимость: <span>17 000</span></p>
-											</div>
-										</div>
-										<div class="order__products_quality">2</div>
-										<div class="order__products_total_price">17 000</div>
-									</div>
-									<div class="order__products_item">
-										<div class="order__products_name">
-											<span>Темная футболка; 43; 163;</span>
-											<div class="order__products_mob">
-												<p class="basket__text">Количество: <span>1</span></p>
-												<p class="basket__text">Стоимость: <span>12 000</span></p>
-											</div>
-										</div>
-										<div class="order__products_quality">1</div>
-										<div class="order__products_total_price">12 000</div>
-									</div>
-									<div class="order__products_item order__products_item-total">
-										<div class="order__products_name">
-											<span>Итого</span>
-										</div>
-										<div class="order__products_quality">4</div>
-										<div class="order__products_total_price total_price_mob">49 000</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					<!-- end tabs -->
 				</div>
+				<!-- end auth__block -->
 			</div>
 			<!-- end wrapper -->
 		</main>

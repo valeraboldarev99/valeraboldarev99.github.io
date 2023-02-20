@@ -94,4 +94,8 @@ $(document).ready(function () {
 			asNavFor: '.product__slider__small'
 		});
 
+		/*показать пароль*/
+		$('.eye').on('click', function() {
+			$("#login_password").attr('type') == 'password' ? $("#login_password").attr('type','text') : $("#login_password").attr('type','password');
+		});
 });
