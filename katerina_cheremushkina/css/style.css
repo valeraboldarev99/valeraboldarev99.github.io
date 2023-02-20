@@ -196,6 +196,21 @@ body {
 	background-size: 24px
 }
 
+.header__basket_count {
+	position: absolute;
+	background-color: #b71e43;
+	color: #fff;
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	bottom: -5px;
+	right: -5px;
+	font-size: 11px;
+	text-align: center;
+	z-index: 100;
+}
+
 .header__menu_items {
 	list-style: none;
 	display: flex;
