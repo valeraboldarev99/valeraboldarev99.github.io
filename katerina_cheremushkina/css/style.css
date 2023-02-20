@@ -1222,3 +1222,46 @@ body {
 	text-decoration: none;
 }
 /*end user_auth*/
+/*user account*/
+.set__content {
+	display: none;
+}
+
+.set__btn {
+	display: inline-block;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	position: relative;
+}
+
+.set__btn::after {
+	content: '';
+	width: 25px;
+	height: 15px;
+	position: absolute;
+	background: url('../img/show_mini.svg') center no-repeat;
+	background-size: 18px;
+	top: 50%;
+	transform: translate(0, -50%);
+	right: -40px;
+	display: block;
+}
+
+.set__btn.active::after {
+	background: url('../img/show_mini.svg') center no-repeat;
+	background-size: 18px;
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: translate(0, -50%) rotate(180deg);
+	display: block;
+}
+
+.orders__set {
+	margin-bottom: 30px;
+}
+/*end user account*/

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Katerina Cheremushkina | Авторизация</title>
+	<title>Katerina Cheremushkina | Кабинет пользователя</title>
 	<link rel="stylesheet" href="css/slick.css"/>
 	<link rel="stylesheet" href="css/jquery.fancybox.css"/>
 	<link rel="stylesheet" href="css/reset.css">
@@ -96,78 +96,150 @@
 		<!-- end page__header -->
 		<main class="page__main">
 			<div class="wrapper">
-				<div class="auth__block">
-					<div class="tabs">
-						<input  class="tabs-input" id="tab1" type="radio" name="tabs" checked>
-						<label class="tabs-label" for="tab1" title="Войти"><span>Войти</span></label>
-
-						<input  class="tabs-input" id="tab2" type="radio" name="tabs">
-						<label class="tabs-label last" for="tab2" title="Регистрация"><span>Регистрация</span></label>
-
-						<div class="sections" id="content1">
-							<div class="login__form">
-								<form action="#">
-									<div class="auth__form_item">
-										<label for="login_email" class="form__label">E-mail</label>
-										<input type="email" id="login_email" class="form__input" name="email" required>
+				<h1>ЛИЧНЫЙ КАБИНЕТ</h1>
+				<div class="orders__set">
+					<div class="set">
+						<div class="set__btn active">
+							<h3 class="content__header">Активные заказы</h3>
+						</div>
+						<div class="set__content" style="display: block;">
+							<div class="basket__items">
+								<div class="basket__item">
+									<div class="basket__item_block basket__item_product">
+										<p class="basket__text">Товар</p>
 									</div>
-									<div class="auth__form_item password__block">
-										<label for="login_password" class="form__label">Пароль</label>
-										<input type="password" id="login_password" class="form__input password__input" name="login_password" required>
-										<div class="eye"></div>
+									<div class="basket__item_block basket__item_quality">
+										<p class="basket__text">Количество</p>
 									</div>
-									<p>
-										<a href="#" class="form__link">Забыли пароль?</a>
-									</p>
-									<button class="btn">Войти</button>
-								</form>
+									<div class="basket__item_block basket__item_total-price">
+										<p class="basket__text">Стоимость</p>
+									</div>
+									<div class="basket__item_block basket__item_total-price">
+										<p class="basket__text">Статус</p>
+									</div>
+								</div>
+
+								<div class="basket__item">
+									<div class="basket__item_block basket__item_product">
+										<div class="basket__item_pic">
+											<img src="img/temp/products/5.png" alt="title">
+										</div>
+										<div class="basket__item_info">
+											<p class="basket__text product__name">Темная футболка</p>
+											<p class="basket__text">Размер: <span id="product_size">51</span></p>
+											<p class="basket__text">Рост: <span id="product_size">171</span></p>
+											<p class="basket__text">Заказ: <span id="product_size">#359</span></p>
+										</div>
+
+										<div class="basket__item_mob">
+											<div class="basket__mob_item">
+												<p class="basket__text">Количество: </p>
+												<p class="basket__text">1</p>
+											</div>
+											<div class="basket__mob_item">
+												<p class="basket__text">Стоимость: </p>
+												<p class="basket__text">20 000 сом</p>
+											</div>
+											<div class="basket__mob_item">
+												<p class="basket__text">Заказ: </p>
+												<p class="basket__text">#359</p>
+											</div>
+											<div class="basket__mob_item">
+												<p class="basket__text">Статус: </p>
+												<p class="basket__text">Ожидает оплаты</p>
+											</div>
+										</div>
+
+									</div>
+									<div class="basket__item_block basket__item_quality">
+										<p class="basket__text">1</p>
+									</div>
+									<div class="basket__item_block basket__item_total-price">
+										<p class="basket__text">20 000 сом</p>
+									</div>
+									<div class="basket__item_block basket__item_total-price">
+										<p class="basket__text">Ожидает оплаты</p>
+									</div>
+								</div>
 							</div>
+							<!-- end basket__items -->
 						</div>
-						<!-- end content1 -->
-
-						<div class="sections" id="content2">
-							<form action="#" class="register__form">
-								<div class="auth__form_item">
-									<label for="name" class="form__label">Имя*</label>
-									<input type="text" id="name" name="name" class="form__input" required>
-								</div>
-								<div class="auth__form_item">
-									<label for="lastname" class="form__label">Фамилия*</label>
-									<input type="text" id="lastname" name="lastname" class="form__input" required>
-								</div>
-								<div class="auth__form_item">
-									<label for="e-mail" class="form__label">E-mail*</label>
-									<input type="email" id="e-mail" name="e-mail" class="form__input" required>
-								</div>
-								<div class="auth__form_item">
-									<label for="phone" class="form__label">Телефон*</label>
-									<input type="text" id="phone" name="phone" class="form__input" required>
-								</div>
-								<div class="auth__form_item">
-									<label for="passwordreg" class="form__label">Пароль*</label>
-									<input type="password" id="passwordreg" name="password" class="form__input" required>
-								</div>
-								<div class="auth__form_item">
-									<label for="passwordcomf" class="form__label">Повторите пароль*</label>
-									<input type="password" id="passwordcomf" name="password_comf" class="form__input" required>
-								</div>
-								<div class="auth__form_item_big">
-									<label for="address" class="form__label">Адрес*</label>
-									<input type="text" id="address" name="address" class="form__input" required>
-								</div>
-								<p class="auth__text auth__footer">
-									Кликнув на "Зарегистрироваться", Вы соглашаетесь с <a href="#" class="auth__link">политикой безопасности и конфиденциальности</a>
-								</p>
-								<div class="register__btn">
-									<button class="btn">Зарегистрироваться</button>
-								</div>
-							</form>
-						</div>
-						<!-- end content2 -->
 					</div>
-					<!-- end tabs -->
+					<!-- end set -->
 				</div>
-				<!-- end auth__block -->
+				<!-- end orders__set -->
+				<div class="orders__set">
+					<div class="set">
+						<div class="set__btn active">
+							<h3 class="content__header">Завершенные заказы</h3>
+						</div>
+						<div class="set__content" style="display: block;">
+							<div class="basket__items">
+								<div class="basket__item">
+									<div class="basket__item_block basket__item_product">
+										<p class="basket__text">Товар</p>
+									</div>
+									<div class="basket__item_block basket__item_quality">
+										<p class="basket__text">Количество</p>
+									</div>
+									<div class="basket__item_block basket__item_total-price">
+										<p class="basket__text">Стоимость</p>
+									</div>
+									<div class="basket__item_block basket__item_total-price">
+										<p class="basket__text">Статус</p>
+									</div>
+								</div>
+
+								<div class="basket__item">
+									<div class="basket__item_block basket__item_product">
+										<div class="basket__item_pic">
+											<img src="img/temp/products/11.png" alt="title">
+										</div>
+										<div class="basket__item_info">
+											<p class="basket__text product__name">Black Meaning</p>
+											<p class="basket__text">Размер: <span id="product_size">43</span></p>
+											<p class="basket__text">Рост: <span id="product_size">169</span></p>
+											<p class="basket__text">Заказ: <span id="product_size">#321</span></p>
+										</div>
+
+										<div class="basket__item_mob">
+											<div class="basket__mob_item">
+												<p class="basket__text">Количество: </p>
+												<p class="basket__text">2</p>
+											</div>
+											<div class="basket__mob_item">
+												<p class="basket__text">Стоимость: </p>
+												<p class="basket__text">17 000 сом</p>
+											</div>
+											<div class="basket__mob_item">
+												<p class="basket__text">Заказ: </p>
+												<p class="basket__text">#321</p>
+											</div>
+											<div class="basket__mob_item">
+												<p class="basket__text">Статус: </p>
+												<p class="basket__text">Оплачно</p>
+											</div>
+										</div>
+
+									</div>
+									<div class="basket__item_block basket__item_quality">
+										<p class="basket__text">2</p>
+									</div>
+									<div class="basket__item_block basket__item_total-price">
+										<p class="basket__text">17 000 сом</p>
+									</div>
+									<div class="basket__item_block basket__item_total-price">
+										<p class="basket__text">Оплачно</p>
+									</div>
+								</div>
+							</div>
+							<!-- end basket__items -->
+						</div>
+						<!-- end set__content -->
+					</div>
+					<!-- end set -->
+				</div>
+				<!-- end orders__set -->
 			</div>
 			<!-- end wrapper -->
 		</main>
