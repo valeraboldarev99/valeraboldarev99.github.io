@@ -1,18 +1,5 @@
 @font-face {
     font-family: 'Inter';
-    src: url('../fonts/inter/Inter-ExtraLight.eot');
-    src: url('../fonts/inter/Inter-ExtraLight.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/inter/Inter-ExtraLight.woff2') format('woff2'),
-        url('../fonts/inter/Inter-ExtraLight.woff') format('woff'),
-        url('../fonts/inter/Inter-ExtraLight.ttf') format('truetype'),
-        url('../fonts/inter/Inter-ExtraLight.svg#Inter-ExtraLight') format('svg');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
     src: url('../fonts/inter/Inter-Medium.eot');
     src: url('../fonts/inter/Inter-Medium.eot?#iefix') format('embedded-opentype'),
         url('../fonts/inter/Inter-Medium.woff2') format('woff2'),
@@ -20,6 +7,19 @@
         url('../fonts/inter/Inter-Medium.ttf') format('truetype'),
         url('../fonts/inter/Inter-Medium.svg#Inter-Medium') format('svg');
     font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter/Inter-SemiBold.eot');
+    src: url('../fonts/inter/Inter-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/inter/Inter-SemiBold.woff2') format('woff2'),
+        url('../fonts/inter/Inter-SemiBold.woff') format('woff'),
+        url('../fonts/inter/Inter-SemiBold.ttf') format('truetype'),
+        url('../fonts/inter/Inter-SemiBold.svg#Inter-SemiBold') format('svg');
+    font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
