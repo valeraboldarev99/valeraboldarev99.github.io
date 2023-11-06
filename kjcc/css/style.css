@@ -132,7 +132,7 @@ body {
     color: var(--black-color);
     text-transform: uppercase;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .header__menu_set {
@@ -254,7 +254,7 @@ body {
 .header__lang_link {
     text-transform: uppercase;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--text-gray-color);
 }
 
@@ -268,7 +268,7 @@ body {
     text-decoration: none;
     font-size: 12px;
     border-radius: 4px;
-    font-weight: 600;
+    font-weight: 500;
     white-space: nowrap;
 }
 
@@ -296,7 +296,7 @@ body {
 
 .slide {
     position: relative;
-    height: 600px;
+    height: 500px;
 	overflow: hidden;
 	z-index: 0;
 }
@@ -342,7 +342,7 @@ body {
 .slide__info_title {
     color: var(--white-color);
     font-size: 50px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.1;
     margin-top: 10px;
     margin-bottom: 30px;
@@ -466,6 +466,73 @@ body {
 
 .slick-dots li.slick-active button {
     display: none;
+}
+
+.about__block {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 0;
+}
+
+.about__left {
+    width: 47%;
+}
+
+.about__right {
+    width: 47%;
+}
+
+.about__title {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--black-color);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.about__text {
+    font-size: 15px;
+    font-weight: normal;
+    color: var(--text-gray-color);
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.link__next {
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.5;
+    font-size: 12px;
+    color: var(--text-active-color);
+    font-weight: 600;
+    position: relative;
+    padding-right: 15px;
+}
+
+.link__arrow:hover {
+    color: var(--hover-active-color);
+}
+
+.link__next::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 11px;
+    height: 11px;
+    background: url('../img/link_next.svg') center center no-repeat;
+    background-size: contain;
+}
+
+.link__next:hover::after {
+    background: url('../img/link_next_hover.svg') center center no-repeat;
+    background-size: contain;
+}
+
+.about__pic {
+    width: 100%;
+    height: auto;
 }
 
 /*mobmenu*/
