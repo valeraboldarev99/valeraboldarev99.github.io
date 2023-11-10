@@ -1,4 +1,4 @@
-@media screen and (max-width:1300px) {
+/* @media screen and (max-width:1440px) {
 	body {
 		font-size: 14px;
 	}
@@ -6,7 +6,7 @@
 	.wrapper {
 		width: 768px;
 	}
-}
+} */
 
 @media screen and (max-width:780px) {
 	.wrapper{

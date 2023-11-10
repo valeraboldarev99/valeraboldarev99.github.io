@@ -20,6 +20,27 @@ $(document).ready(function () {
 		]
 	});
 
+    //слайдер членов палаты
+    $('.chamber-member__slider').slick({
+		slidesToScroll:1,
+		slidesToShow:6,
+		// autoplay: true,
+		// appendArrows:'.slider-arrows',
+        // appendDots: '.slick-slider-dots',
+		// autoplaySpeed: 3000,
+		pauseOnHover:true,
+		arrows:true,
+		dots:false,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					arrows:true,
+				}
+			}
+		]
+	});
+
     /*мобильное меню*/
 	var mobileSidebar = function()
 	{
