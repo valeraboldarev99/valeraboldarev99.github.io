@@ -537,6 +537,29 @@ body {
 .about__pic {
     width: 100%;
     height: auto;
+    position: relative;
+}
+
+.about__pic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 74px;
+    height: 74px;
+    background-size: contain;
+    background: url('../img/about_pic_top.svg') center center no-repeat;
+}
+
+.about__pic::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 124px;
+    height: 124px;
+    background-size: contain;
+    background: url('../img/about_pic_bottom.svg') center center no-repeat;
 }
 
 .advantages__block {
