@@ -3,10 +3,10 @@ $(document).ready(function () {
 	$('.slider').slick({
 		slidesToScroll:1,
 		slidesToShow:1,
-		// autoplay: true,
+		autoplay: true,
 		appendArrows:'.slider-arrows',
         appendDots: '.slick-slider-dots',
-		// autoplaySpeed: 3000,
+		autoplaySpeed: 3000,
 		pauseOnHover:true,
 		arrows:true,
 		dots:true,
@@ -20,14 +20,12 @@ $(document).ready(function () {
 		]
 	});
 
-    //слайдер членов палаты
+    //слайдер членов палаты и партнеров
     $('.chamber-member__slider').slick({
 		slidesToScroll:1,
 		slidesToShow:6,
-		// autoplay: true,
-		// appendArrows:'.slider-arrows',
-        // appendDots: '.slick-slider-dots',
-		// autoplaySpeed: 3000,
+		autoplay: true,
+		autoplaySpeed: 3000,
 		pauseOnHover:true,
 		arrows:true,
 		dots:false,
