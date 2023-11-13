@@ -30,6 +30,12 @@ $(document).ready(function () {
 		arrows:true,
 		dots:false,
 		responsive: [
+            {
+				breakpoint: 1300,
+				settings: {
+		            slidesToShow:4,
+				}
+			},
 			{
 				breakpoint: 767,
 				settings: {

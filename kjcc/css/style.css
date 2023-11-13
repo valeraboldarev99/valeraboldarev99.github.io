@@ -620,7 +620,6 @@ body {
 }
 
 .advantage__item_number span {
-    width: 50px;
     line-height: 1.4;
     font-weight: 600;
     color: var(--text-active-color);
@@ -660,6 +659,7 @@ body {
     font-weight: 500;
     font-size: 40px;
     line-height: 44px;
+    margin-bottom: 0;
 }
 
 .chamber-member__slider .slick-slide {
@@ -725,13 +725,12 @@ body {
 }
 
 .chamber-member__slider .slick-prev {
-    margin-right: 10px;
     left: -100px;
     background: var(--advantages-bg-color) url('../img/slider_prev_black.svg') center center no-repeat;
 }
 
 .chamber-member__slider .slick-next {
-    right: -100px;
+    right: -90px;
     background: var(--advantages-bg-color) url('../img/slider_next_black.svg') center center no-repeat;
 }
 
@@ -766,6 +765,7 @@ body {
 .digitals__items {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     z-index: 2;
     position: relative;
 }
