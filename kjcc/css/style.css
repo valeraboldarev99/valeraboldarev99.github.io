@@ -9,9 +9,7 @@
     --text-active-color: #DA2128;
     --hover-active-color: #C71219;
     --icons-color-filter: #8d8d8d;
-    --wrapper-pk-width: 1232px;
-    --wrapper-ipad-width: 768px;
-    --wrapper-modile-width: 320px;
+    --wrapper-width: 1232px;
 }
 
 .act {
@@ -27,11 +25,11 @@ body {
 	font-size: 15px;
 	background: #fff;
 	color: var(--black-color);
-	font-weight: normal;
+	font-weight: 400;
 }
 
 .wrapper {
-	width: var(--wrapper-pk-width);
+	width: var(--wrapper-width);
 	margin: 0 auto;
 }
 
@@ -388,7 +386,7 @@ body {
     height: 1px;
     background-color: var(--white-color);
     opacity: 0.2;
-	width: var(--wrapper-pk-width);
+	width: var(--wrapper-width);
     z-index: 20;
 }
 
@@ -397,7 +395,7 @@ body {
 	bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
-	width: var(--wrapper-pk-width);
+	width: var(--wrapper-width);
 	margin: 0 auto;
     text-align: right;
 }
@@ -963,7 +961,7 @@ body {
     position: absolute;
     z-index: 2;
     bottom: 90px;
-    width: var(--wrapper-pk-width);
+    width: var(--wrapper-width);
 }
 
 .info__items::before {
