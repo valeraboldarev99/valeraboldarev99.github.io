@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>KJCC | Главная страница</title>
-	<link rel="stylesheet" href="css/slick.css"/>
-	<link rel="stylesheet" href="css/jquery.fancybox.css"/>
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/fonts.css"/>
+	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
@@ -86,11 +86,12 @@
                             </div>
                         </div>
                         <div class="header__search">
-                            <div class="search__form">
+                            <div id="search__btn" class="search__btn" onclick="showSearch()"></div>
+                            <div id="search__form" class="search__form">
                                 <form action="#">
                                     <input type="text" placeholder="поиск по сайту" class="search__form_input">
                                     <button type="submit" class="search__form_btn search__form_btn-search"></button>
-                                    <button type="reset" class="search__form_btn search__form_btn-clear"></button>
+                                    <button id="hide_form" class="search__form_btn search__form_btn-clear" onclick="hideSearch()"></button>
                                 </form>
                             </div>
                         </div>
@@ -607,10 +608,15 @@
                 <div class="wrapper">
                     <div class="info__block_content">
                         <h3 class="info__title">
-                            Кыргызско-японская торговая палата с нетерпением ждет возможности приветствовать вас в качестве члена
+                            Кыргызско-японская торговая палата<br>
+                            с нетерпением ждет возможности <br>
+                            приветствовать вас в качестве члена
                         </h3>
                         <p class="info__desc">
-                            Стоит отметить, что медиамикс транслирует институциональный конкурент, невзирая на действия конкурентов. Рекламное сообщество, анализируя результаты рекламной кампании, детерминирует эмпирический медиаплан. Тем не менее, медиаплан нейтрализует креативный имидж предприятия.
+                            Стоит отметить, что медиамикс транслирует институциональный конкурент,<br>
+                             невзирая на действия конкурентов. Рекламное сообщество, анализируя <br>
+                             результаты рекламной кампании, детерминирует эмпирический медиаплан. <br>
+                             Тем не менее, медиаплан нейтрализует креативный имидж предприятия.
                         </p>
                     </div>
                     <div class="info__items">
@@ -712,9 +718,8 @@
 		</div>
 	</div> -->
 
-	<script src="js/jquery-3.6.0 .min.js"></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/slick.js"></script>
-	<script src="js/jquery.fancybox.js"></script>
 	<script src="js/core.js"></script>
 </body>
 </html>

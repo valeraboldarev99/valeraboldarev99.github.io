@@ -76,3 +76,15 @@ $(document).ready(function () {
 	}();
 	mobileSidebar.init();
 });
+
+function showSearch()
+{
+    $('#search__btn').css('display', 'none');
+    $('#search__form').css('display', 'inline-block');
+}
+
+function hideSearch()
+{
+    $('#search__btn').css('display', 'inline-block');
+    $('#search__form').css('display', 'none');
+}
