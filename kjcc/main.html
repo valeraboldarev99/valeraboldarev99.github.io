@@ -86,12 +86,12 @@
                             </div>
                         </div>
                         <div class="header__search">
-                            <div id="search__btn" class="search__btn" onclick="showSearch()"></div>
+                            <div id="search__btn" class="search__btn" onclick="showHideSearch()"></div>
                             <div id="search__form" class="search__form">
                                 <form action="#">
                                     <input type="text" placeholder="поиск по сайту" class="search__form_input">
                                     <button type="submit" class="search__form_btn search__form_btn-search"></button>
-                                    <button id="hide_form" class="search__form_btn search__form_btn-clear" onclick="hideSearch()"></button>
+                                    <button class="search__form_btn search__form_btn-clear" onclick="showHideSearch()"></button>
                                 </form>
                             </div>
                         </div>
@@ -101,6 +101,11 @@
                         <div class="header__btn">
                             <a href="#" class="btn btn-default">Заявка на членство</a>
                         </div>
+                    </div>
+                    <div class="header__mobile">
+                        <div id="search__mobile_btn" class="header__mobile_btn search__mobile_btn" onclick="showHideMobSearch()"></div>
+                        <a href="#" class="header__mobile_btn header__mobile_phone"></a>
+                        <div id="sidebar-open" class="header__mobile_btn header__mobile_hamburger"></div>
                     </div>
 				</header>
 			</div>
@@ -701,22 +706,70 @@
 	</div>
 
 	<!-- sidebar -->
-	<!-- <div class="sidebar-overlay"></div>
 	<div class="sidebar">
-		<div class="sidebar-block">
-			<div class="sidebar-block__top">
-				<div class="user-sidebar__logo">
-				    <a href="index.html">
-				        <img src="/img/logo.svg" class="sidebar__logo" alt="logo">
-				    </a>
-				</div>
-				<div class="sidebar-block__close sidebar-close">&nbsp;</div>
-			</div>
-			<div class="sidebar-block__content">
-				content sidebar
-			</div>
+		<div class="sidebar__block">
+            <div class="wrapper">
+                <div class="sidebar__menu_items">
+                    <div class="sidebar__menu_item">
+                        <a href="#" class="sidebar__menu_link">О нас</a>
+                    </div>
+                    <div class="sidebar__menu_item">
+                        <a href="#" class="sidebar__menu_link">Членство</a>
+                    </div>
+                    <div class="sidebar__menu_item sidebar__menu_item-set">
+                        <p class="sidebar__menu_link">медиа-центр</p>
+                        <span class="sidebar__menu_set"></span>
+                        <div class="sidebar__sub-menu_items">
+                            <div class="sidebar__sub-menu_item">
+                                <a href="#" class="sidebar__sub-menu_link">Категории</a>
+                            </div>
+                            <div class="sidebar__sub-menu_item">
+                                <a href="#" class="sidebar__sub-menu_link">Члены палаты</a>
+                            </div>
+                            <div class="sidebar__sub-menu_item">
+                                <a href="#" class="sidebar__sub-menu_link">Преимущества</a>
+                            </div>
+                            <div class="sidebar__sub-menu_item">
+                                <a href="#" class="sidebar__sub-menu_link">Заявка на вступление</a>
+                            </div>
+                            <div class="sidebar__sub-menu_item">
+                                <a href="#" class="sidebar__sub-menu_link">Партнеры</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar__menu_item">
+                        <a href="#" class="sidebar__menu_link">контакты</a>
+                    </div>
+                </div>
+                <!-- end sidebar menu  -->
+
+                <div class="sidebar__contacts">
+                    <a class="sidebar__contacts_link sidebar__contacts_link-lang">English</a>
+                    <a class="sidebar__contacts_link sidebar__contacts_link-phone">+996 (456) 452 256</a>
+                    <a class="sidebar__contacts_link sidebar__contacts_link-email">example@info.ru</a>
+                    <a class="btn btn-default sidebar__contact_btn">Заявка на членство</a>
+                </div>
+            </div>
 		</div>
-	</div> -->
+	</div>
+
+    <!-- mobile search  -->
+    <div class="search-overlay"></div>
+    <div class="search__mobile">
+        <div class="wrapper">
+            <div class="search__mobile_form">
+                <form action="#">
+                    <div class="search__mobile-form_items">
+                        <div class="search__mobile-form_field">
+                            <input type="text" placeholder="поиск по сайту" class="search__form_input search__mobile_input">
+                            <button type="reset" class="search__mobile-form_reset"></button>
+                        </div>
+                        <button class="search__form_btn search__form_btn-clear" onclick="showHideMobSearch()"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/slick.js"></script>
