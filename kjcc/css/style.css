@@ -1278,3 +1278,7 @@ body {
     text-align: center;
     padding: 12px 25px;
 }
+
+.red-color {
+    color: var(--text-active-color);
+}
