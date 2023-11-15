@@ -600,7 +600,7 @@
         margin-bottom: 30px;
     }
 
-    .about_link__next {
+    .link__next {
         display: none;
     }
 
@@ -682,107 +682,96 @@
         padding: 10px 0;
     }
 
-
-
-
-
     .chamber-member__block {
-        padding: 95px 0 63px 0;
+        padding: 50px 0;
     }
 
     .main__block_top {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     .main__block_title {
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 44px;
-        margin-bottom: 0;
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .chamber-member__slider {
+        margin-bottom: 90px;
     }
 
     .chamber-member__slider .slick-slide {
-        padding-right: 15px;
-    }
-
-    .chamber-member__slider .slide__content {
-        width: 100%;
-        cursor: pointer;
-    }
-
-    .chamber-member__slider .slide__content_pic {
-        border: 1px solid var(--border-gray-color);
-        height: 165px;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 10px;
+        padding-right: 20px;
     }
 
     .chamber-member__slider .slide__content_pic picture,
     .chamber-member__slider .slide__content_pic img {
-        width: 60%;
-        height: 165px;
-        position: static;
-        margin: 0 auto;
-        object-fit: contain;
-        filter: saturate(0);
-        opacity: 0.9;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        transition: all 0.5s ease;
+        width: 55%;
     }
 
-    .chamber-member__slider .slide__content:hover .slide__content_pic picture,
-    .chamber-member__slider .slide__content:hover .slide__content_pic img {
-        filter: saturate(100%);
-        opacity: 1;
-    }
-
-    .chamber-member__slider_title {
-        font-size: 13px;
-        font-weight: normal;
-        line-height: 18px;
-        text-align: center;
-        color: var(--text-gray-desc);
-    }
-
-    .chamber-member__slider .slick-prev,
-    .chamber-member__slider .slick-next {
+    .chamber-member__slider .slick-dots {
+        display: flex;
+        align-items: center;
         position: absolute;
-        top: 60px;
-        font-size: 0;
-        line-height: 0;
-        font-size: 0; 
-        border: none;
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
+        list-style: none;
+        padding: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -40px;
+    }
+
+    .chamber-member__slider .slick-dots li {
+        position: relative;
+        display: inline-block;
+        color: #ACACAC;
+        background-color: #ACACAC;
+        margin: 0 8px;
+        width: 10px;
+        height: 10px;
+        border: 2px solid #ACACAC;
         border-radius: 50%;
-        background-color: var(--advantages-bg-color);
+        cursor: pointer;
+        top: 50%;
     }
 
-    .chamber-member__slider .slick-prev {
-        left: -100px;
-        background: var(--advantages-bg-color) url('../img/slider_prev_black.svg') center center no-repeat;
+    .chamber-member__slider .slick-dots li button {
+        font-size: 0;
+        padding: 0;
+        position: relative;
+        display: block;
+        outline: none;
     }
 
-    .chamber-member__slider .slick-next {
-        right: -90px;
-        background: var(--advantages-bg-color) url('../img/slider_next_black.svg') center center no-repeat;
+    .chamber-member__slider .slick-dots li button:before {
+        content: '';
+        position: absolute;
+        cursor: pointer;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 10px;
+        height: 10px;
+        background: #ACACAC;
+        border-radius: 50%; 
+        border: 2px solid #ACACAC;
     }
 
-    .chamber-member__slider .slick-prev:hover {
-        background: var(--advantages-bg-color) url('../img/slider_prev_hover.svg') center center no-repeat;
+    .chamber-member__slider .slick-dots li button:hover,
+    .chamber-member__slider .slick-dots li button:focus {
+        outline: none;
     }
 
-    .chamber-member__slider .slick-next:hover {
-        background: var(--advantages-bg-color) url('../img/slider_next_hover.svg') center center no-repeat;
+    .chamber-member__slider .slick-dots li.slick-active {
+        background-color: transparent;
     }
+
+    .chamber-member__slider .slick-dots li.slick-active button {
+        display: none;
+    }
+
+
+
+
+
 
     .digitals__block {
         height: 450px;

@@ -37,9 +37,12 @@ $(document).ready(function () {
 				}
 			},
 			{
-				breakpoint: 767,
+				breakpoint: 801,
 				settings: {
-					arrows:true,
+		            slidesToShow:1,
+                    centerMode: true,
+		            arrows:false,
+                    dots:true,
 				}
 			}
 		]
