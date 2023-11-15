@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>KJCC | Главная страница</title>
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<div class="page">
+		<div class="page__header">
+			<div class="wrapper">
+				<header class="header__block">
+					<!-- <div class="mobile-hamburger sidebar-open"><span></span></div> -->
+					<div class="header__left">
+                        <a href="index.html" class="header__logo">
+                            <img src="img/logo.svg" alt="KJCC">
+                        </a>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__info">
+                            <div class="header__contacts">
+                                <a href="#" class="header__contacts_link header__contacts_link_phone">+996 (456) 452 256</a>
+                                <a href="#" class="header__contacts_link header__contacts_link_email">example@info.ru</a>
+                            </div>
+                            
+                            <div class="header__menu">
+                                <div class="header__menu_items">
+                                    <div class="header__menu_item">
+                                        <a href="#" class="header__menu_link">О нас</a>
+                                        <span class="header__menu_set"></span>
+                                        <div class="header__menu_drop">
+                                            <div class="header__inner-menu">
+                                                <div class="header__inner-menu_items">
+                                                    <div class="header__inner-menu_item">
+                                                        <a href="#" class="header__inner-menu_link">О компании</a>
+                                                    </div>
+                                                    <div class="header__inner-menu_item">
+                                                        <a href="#" class="header__inner-menu_link">Новости </a>
+                                                    </div>
+                                                    <div class="header__inner-menu_item">
+                                                        <a href="#" class="header__inner-menu_link">Вакансии</a>
+                                                    </div>
+                                                    <div class="header__inner-menu_item">
+                                                        <a href="#" class="header__inner-menu_link">Длинное название подпункта главного меню</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header__menu_item">
+                                        <a href="#" class="header__menu_link">Членство</a>
+                                        <span class="header__menu_set"></span>
+                                    </div>
+                                    <div class="header__menu_item">
+                                        <a href="#" class="header__menu_link">Медиа-центр</a>
+                                        <span class="header__menu_set"></span>
+                                        <div class="header__menu_drop">
+                                            <div class="header__inner-menu">
+                                                <div class="header__inner-menu_items">
+                                                    <div class="header__inner-menu_item">
+                                                        <a href="#" class="header__inner-menu_link">События</a>
+                                                    </div>
+                                                    <div class="header__inner-menu_item">
+                                                        <a href="#" class="header__inner-menu_link">Новости палаты</a>
+                                                    </div>
+                                                    <div class="header__inner-menu_item">
+                                                        <a href="#" class="header__inner-menu_link">Новости членов палаты</a>
+                                                    </div>
+                                                    <div class="header__inner-menu_item">
+                                                        <a href="#" class="header__inner-menu_link">Вестник палаты</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header__menu_item">
+                                        <a href="#" class="header__menu_link">Контакты</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__search">
+                            <div id="search__btn" class="search__btn" onclick="showHideSearch()"></div>
+                            <div id="search__form" class="search__form">
+                                <form action="#">
+                                    <input type="text" placeholder="поиск по сайту" class="search__form_input">
+                                    <button type="submit" class="search__form_btn search__form_btn-search"></button>
+                                    <button class="search__form_btn search__form_btn-clear" onclick="showHideSearch()"></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="header__lang">
+                            <a href="#" class="header__lang_link">en</a>
+                        </div>
+                        <div class="header__btn">
+                            <a href="#" class="btn btn-default">Заявка на членство</a>
+                        </div>
+                    </div>
+                    <div class="header__mobile">
+                        <div id="search__mobile_btn" class="header__mobile_btn search__mobile_btn" onclick="showHideMobSearch()"></div>
+                        <a href="#" class="header__mobile_btn header__mobile_phone"></a>
+                        <div id="sidebar-open" class="header__mobile_btn header__mobile_hamburger"></div>
+                    </div>
+				</header>
+			</div>
+		</div>
+		<main class="page__main">
+			<div class="slider__block">
+                <div class="slider">
+                    <!-- slide -->
+                    <div class="slide">
+                        <picture>
+                            <source srcset="img/content/main_page/slider_1.png" media="(max-width: 767px)">
+                            <img src="img/content/main_page/slider_1.png" alt="pic">
+                        </picture>
+                        <div class="slider-filter-bg"></div>
+                        <div class="wrapper">
+                            <div class="slide__info">
+                                <p class="slide__info_text">Кыргызско-Японская Торговая Палата</p>
+                                <h2 class="slide__info_title">Обмен знаниями и опытом о Кыргызстане и Японии</h2>
+                                <p class="slide__info_text">KJCC организует обеденные презентации, бизнес-семинары и мероприятия после работы по всему Кыргызстану, что даёт вам возможность встретиться с другими членами и получить актуальную информацию/</p>
+                            </div>
+                            <div class="slide__bottom_border"></div>
+                        </div>
+                    </div>
+                    <!-- end slide  -->
+                    <!-- slide -->
+                    <div class="slide">
+                        <picture>
+                            <source srcset="img/content/main_page/slider_1.png" media="(max-width: 767px)">
+                            <img src="img/content/main_page/slider_1.png" alt="pic">
+                        </picture>
+                        <div class="slider-filter-bg"></div>
+                        <div class="wrapper">
+                            <div class="slide__info">
+                                <p class="slide__info_text">Кыргызско-Японская Торговая Палата</p>
+                                <h2 class="slide__info_title">Заголовок 2го слайда</h2>
+                                <p class="slide__info_text">Описание 2го слайда/</p>
+                            </div>
+                            <div class="slide__bottom_border"></div>
+                        </div>
+                    </div>
+                    <!-- end slide  -->
+                    <!-- slide -->
+                    <div class="slide">
+                        <picture>
+                            <source srcset="img/content/main_page/slider_1.png" media="(max-width: 767px)">
+                            <img src="img/content/main_page/slider_1.png" alt="pic">
+                        </picture>
+                        <div class="slider-filter-bg"></div>
+                        <div class="wrapper">
+                            <div class="slide__info">
+                                <p class="slide__info_text">Кыргызско-Японская Торговая Палата</p>
+                                <h2 class="slide__info_title">Заголовок 3го слайда</h2>
+                                <p class="slide__info_text">Описание 3го слайда/</p>
+                            </div>
+                            <div class="slide__bottom_border"></div>
+                        </div>
+                    </div>
+                    <!-- end slide  -->
+                </div>
+                <!-- end slider  -->
+                <div class="slider__arrow_block">
+                    <div class="slick-slider-dots"></div>
+                    <div class="slider-arrows"></div>
+                </div>
+            </div>
+            <!-- end slider block  -->
+
+            <div class="wrapper">     
+                <div class="about__block">
+                    <div class="about__left">
+                        <h2 class="about__title">
+                            Миссия Кыргызско-японской торговой палаты (KJCC), состоит в том, чтобы способствовать пониманию многогранных отношений между Кыргызстаном и Японией.
+                        </h2>
+                        <p class="about__text">
+                            KJCC выполняет свою миссию, предоставляя индивидуальным и корпоративным членам сетевую платформу. Он способствует обсуждению тем, связанных с экономикой, и других тем, представляющих общий интерес, касающихся двух стран. Он поддерживает хорошие отношения с властями и экономическими организациями обеих стран и поддерживает их, развивая и поддерживая двусторонние отношения. KJCC организует обеденные презентации, бизнес-семинары и мероприятия после работы по всему Кыргызстану, что даёт вам возможность встретиться с другими членами и получить актуальную информацию о кыргызско-японских отношениях.
+                        </p>
+                        <a href="#" class="link__next about_link__next">Узнать больше</a>
+                    </div>
+                    <div class="about__right">
+                        <div class="about__pic">
+                            <picture>
+                                <source srcset="img/content/main_page/about.png" type="image/png">
+                                <img src="img/content/main_page/about.png" alt="pic">
+                            </picture>
+                        </div>
+                        <a href="#" class="link__next link__next-mob">Узнать больше</a>
+                    </div>
+                </div>
+                <!-- end about__block -->
+
+            </div>
+            <div class="advantages__block">
+                <div class="wrapper">
+                    <h2 class="advantages__title">Преимущества вступления <br> в торговую палату</h2>
+                    <div class="advantages__list">
+                        <!-- 01 -->
+                        <div class="advantages__list_items">
+                            <div class="advantage__item advantage__item_number">
+                                <span>[</span>
+                                    01
+                                <span>]</span>
+                            </div>
+                            <div class="advantage__item advantage__item_name">Деловые связи</div>
+                            <div class="advantage__item advantage__item_pic">
+                                <img src="img/content/main_page/advatages/1.svg" alt="Деловые связи">
+                            </div>
+                            <div class="advantage__item advantage__item_description">
+                                Палата служит связующим звеном между предпринимателями, инвесторами, высшими должностными лицами и международными организациями для достижения взаимо выгодных решений.
+                            </div>
+                        </div>
+                        <!-- 02 -->
+                        <div class="advantages__list_items">
+                            <div class="advantage__item advantage__item_number">
+                                <span>[</span>
+                                    02
+                                <span>]</span>
+                            </div>
+                            <div class="advantage__item advantage__item_name">Информационная поддержка</div>
+                            <div class="advantage__item advantage__item_pic">
+                                <img src="img/content/main_page/advatages/2.svg" alt="Информационная поддержка">
+                            </div>
+                            <div class="advantage__item advantage__item_description">
+                                Палата предоставляет актуальную информацию своим членам о новостях компаний, последних изменениях в нормативные-правовые акты Кыргызской Республики, грантах и проектах, местных, региональных имеждународных мероприятиях.
+                            </div>
+                        </div>
+                        <!-- 03 -->
+                        <div class="advantages__list_items">
+                            <div class="advantage__item advantage__item_number">
+                                <span>[</span>
+                                    03
+                                <span>]</span>
+                            </div>
+                            <div class="advantage__item advantage__item_name">Продвижение интересов</div>
+                            <div class="advantage__item advantage__item_pic">
+                                <img src="img/content/main_page/advatages/3.svg" alt="Продвижение интересов">
+                            </div>
+                            <div class="advantage__item advantage__item_description">
+                                Палата представляет своих членов и продвигает их интересы на площадках государственно-частного диалога высокого уровня.
+                            </div>
+                        </div>
+                        <!-- 04 -->
+                        <div class="advantages__list_items">
+                            <div class="advantage__item advantage__item_number">
+                                <span>[</span>
+                                    04
+                                <span>]</span>
+                            </div>
+                            <div class="advantage__item advantage__item_name">Бизнес-туры</div>
+                            <div class="advantage__item advantage__item_pic">
+                                <img src="img/content/main_page/advatages/4.svg" alt="Бизнес-туры">
+                            </div>
+                            <div class="advantage__item advantage__item_description">
+                                Палата организовывает зарубежные бизнес-туры членам, Японию, Южную Корею, страны Евросоюза и другие страны для изучения новейших технологийи обмена опытом.
+                            </div>
+                        </div>
+                        <!-- 05 -->
+                        <div class="advantages__list_items">
+                            <div class="advantage__item advantage__item_number">
+                                <span>[</span>
+                                    05
+                                <span>]</span>
+                            </div>
+                            <div class="advantage__item advantage__item_name">Туры в компании</div>
+                            <div class="advantage__item advantage__item_pic">
+                                <img src="img/content/main_page/advatages/5.svg" alt="Туры в компании">
+                            </div>
+                            <div class="advantage__item advantage__item_description">
+                                Палата организовывает корпоративные туры членам для продвижения продукциии услуг принимающей компании; проходит демонстрация ее бизнес-процессови укрепление деловых связей между участниками тура.
+                            </div>
+                        </div>
+                        <!-- 06 -->
+                        <div class="advantages__list_items">
+                            <div class="advantage__item advantage__item_number">
+                                <span>[</span>
+                                    06
+                                <span>]</span>
+                            </div>
+                            <div class="advantage__item advantage__item_name">Глобальная сеть</div>
+                            <div class="advantage__item advantage__item_pic">
+                                <img src="img/content/main_page/advatages/6.svg" alt="Глобальная сеть">
+                            </div>
+                            <div class="advantage__item advantage__item_description">
+                                Палата использует возможности глобальнойсети KJСС для объединения членов палат из разных стран и организации совместных мероприятий.
+                            </div>
+                        </div>
+                        <!-- end 06 -->
+                    </div>
+                </div>
+            </div>
+            <!-- end advantages -->
+            <div class="wrapper">
+                <div class="chamber-member__block">
+                    <div class="main__block_top">
+                        <h2 class="main__block_title">Члены палаты</h2>
+                        <a href="#" class="link__next">Узнать больше</a>
+                    </div>
+                    <div class="chamber-member__slider">
+                        <div class="slide">
+                            <div class="slide__content">
+                                <div class="slide__content_pic">
+                                    <picture>
+                                        <source srcset="img/content/main_page/chamber_member/1.svg" type="image/png">
+                                        <img src="img/content/main_page/chamber_member/1.svg" alt="pic">
+                                    </picture>
+                                </div>
+                                <h4 class="chamber-member__slider_title">
+                                    «Длиное Название компании» в четыре строки слайдера Членов палаты слайд первый РСК Банк
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slide__content">
+                                <div class="slide__content_pic">
+                                    <picture>
+                                        <source srcset="img/content/main_page/chamber_member/2.svg" type="image/png">
+                                        <img src="img/content/main_page/chamber_member/2.svg" alt="pic">
+                                    </picture>
+                                </div>
+                                <h4 class="chamber-member__slider_title">
+                                    «Название компании» в две строки
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slide__content">
+                                <div class="slide__content_pic">
+                                    <picture>
+                                        <source srcset="img/content/main_page/chamber_member/3.svg" type="image/png">
+                                        <img src="img/content/main_page/chamber_member/3.svg" alt="pic">
+                                    </picture>
+                                </div>
+                                <h4 class="chamber-member__slider_title">
+                                    «Название компании» в две строки
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slide__content">
+                                <div class="slide__content_pic">
+                                    <picture>
+                                        <source srcset="img/content/main_page/chamber_member/4.svg" type="image/png">
+                                        <img src="img/content/main_page/chamber_member/4.svg" alt="pic">
+                                    </picture>
+                                </div>
+                                <h4 class="chamber-member__slider_title">
+                                    «Название компании» в две строки
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slide__content">
+                                <div class="slide__content_pic">
+                                    <picture>
+                                        <source srcset="img/content/main_page/chamber_member/5.svg" type="image/png">
+                                        <img src="img/content/main_page/chamber_member/5.svg" alt="pic">
+                                    </picture>
+                                </div>
+                                <h4 class="chamber-member__slider_title">
+                                    «Название компании» в две строки
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slide__content">
+                                <div class="slide__content_pic">
+                                    <picture>
+                                        <source srcset="img/content/main_page/chamber_member/6.svg" type="image/png">
+                                        <img src="img/content/main_page/chamber_member/6.svg" alt="pic">
+                                    </picture>
+                                </div>
+                                <h4 class="chamber-member__slider_title">
+                                    «Название компании» в две строки
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slide__content">
+                                <div class="slide__content_pic">
+                                    <picture>
+                                        <source srcset="img/content/main_page/chamber_member/3.svg" type="image/png">
+                                        <img src="img/content/main_page/chamber_member/3.svg" alt="pic">
+                                    </picture>
+                                </div>
+                                <h4 class="chamber-member__slider_title">
+                                    «Название компании» в две строки
+                                </h4>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="#" class="link__next link__next-mob">Узнать больше</a>
+                </div>
+                <!-- end chamber-member__block -->
+            </div>
+
+            <div class="digitals__block">
+                <div class="digitals__block_filter"></div>
+                <div class="wrapper">
+                    <div class="digitals__items">
+                        <div class="digitals__item digitals__item_title">
+                            <h3 class="digitals__title">
+                                Международная сеть Кыргызско- <br>Японской Торговой Палаты
+                            </h3>
+                            <a href="#" class="btn btn-default digitals__btn">Заявка на членство</a>
+                        </div>
+                        <div class="digitals__item digitals__item_counts">
+                            <div class="digitals__item_count">108</div>
+                            <p class="digitals__item_desc">
+                                торговая палата представлена в 108 странах по всему миру
+                            </p>
+                        </div>
+                        <div class="digitals__item digitals__item_counts">
+                            <div class="digitals__item_count">3 000 000</div>
+                            <p class="digitals__item_desc">
+                                торговая палата  представлены интересы более 3 млн компаний по всему миру
+                            </p>
+                        </div>
+                        <a href="#" class="btn btn-default digitals__btn-mob">Заявка на членство</a>
+                    </div>
+                </div>
+            </div>
+            <!-- end digitals -->
+
+            <div class="wrapper">
+                <div class="news__block">
+                    <div class="main__block_top">
+                        <h2 class="main__block_title">Новости и события</h2>
+                        <a href="#" class="link__next">Узнать больше</a>
+                    </div>
+                    <div class="news__items">
+                        <div class="news__item">
+                            <div class="news__item_pic">
+                                <picture>
+                                    <source srcset="img/content/main_page/news/1.png" type="image/png">
+                                    <img src="img/content/main_page/news/1.png" alt="News 1">
+                                </picture>
+                            </div>
+                            <div class="news__item_content">
+                                <span class="news__item_type">Новости</span>
+                                <span class="news__item_date">23 сентября 2023</span>
+                                <h4 class="news__item_title">
+                                    Рабочая встреча между компаниями-членами палаты и Государственной Налоговой Службой КР
+                                </h4>
+                                <p class="news__item_desc">
+                                    Сущность и концепция маркетинговой программы, пренебрегая деталями, транслирует комплексный нестандартный подход. Стратегическое планирование амбивалентно.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="news__item">
+                            <div class="news__item_pic">
+                                <picture>
+                                    <source srcset="img/content/main_page/news/2.png" type="image/png">
+                                    <img src="img/content/main_page/news/2.png" alt="News 2">
+                                </picture>
+                            </div>
+                            <div class="news__item_content">
+                                <span class="news__item_type">События</span>
+                                <span class="news__item_date">23 сентября 2023</span>
+                                <h4 class="news__item_title">
+                                    Кыргызско-Японская торговая палата приветствует в числе своих членов ОcОО «Тооашкан»
+                                </h4>
+                                <p class="news__item_desc">
+                                    Сущность и концепция маркетинговой программы, пренебрегая деталями, транслирует комплексный нестандартный подход. Стратегическое планирование амбивалентно.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="news__item">
+                            <div class="news__item_pic">
+                                <picture>
+                                    <source srcset="img/content/main_page/news/3.png" type="image/png">
+                                    <img src="img/content/main_page/news/3.png" alt="News 3">
+                                </picture>
+                            </div>
+                            <div class="news__item_content">
+                                <span class="news__item_type">Новости</span>
+                                <span class="news__item_date">22 сентября 2023</span>
+                                <h4 class="news__item_title">
+                                    Региональный Бизнес Тур в Японию
+                                </h4>
+                                <p class="news__item_desc">
+                                    Сущность и концепция маркетинговой программы, пренебрегая деталями, транслирует комплексный нестандартный подход. Стратегическое планирование амбивалентно.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="link__next link__next-mob">Узнать больше</a>
+                </div>
+                <!-- end news block  -->
+
+                <div class="chamber-member__block">
+                    <div class="main__block_top">
+                        <h2 class="main__block_title">Партнеры палаты</h2>
+                        <a href="#" class="link__next">Узнать больше</a>
+                    </div>
+                    <div class="chamber-member__slider">
+                        <div class="slide">
+                            <div class="slide__content">
+                                <div class="slide__content_pic">
+                                    <picture>
+                                        <source srcset="img/content/main_page/chamber_member/1.svg" type="image/png">
+                                        <img src="img/content/main_page/chamber_member/1.svg" alt="pic">
+                                    </picture>
+                                </div>
+                                <h4 class="chamber-member__slider_title">
+                                    «Длиное Название компании» в четыре строки слайдера Членов палаты слайд первый РСК Банк
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slide__content">
+                                <div class="slide__content_pic">
+                                    <picture>
+                                        <source srcset="img/content/main_page/chamber_member/2.svg" type="image/png">
+                                        <img src="img/content/main_page/chamber_member/2.svg" alt="pic">
+                                    </picture>
+                                </div>
+                                <h4 class="chamber-member__slider_title">
+                                    «Название компании» в две строки
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slide__content">
+                                <div class="slide__content_pic">
+                                    <picture>
+                                        <source srcset="img/content/main_page/chamber_member/3.svg" type="image/png">
+                                        <img src="img/content/main_page/chamber_member/3.svg" alt="pic">
+                                    </picture>
+                                </div>
+                                <h4 class="chamber-member__slider_title">
+                                    «Название компании» в две строки
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slide__content">
+                                <div class="slide__content_pic">
+                                    <picture>
+                                        <source srcset="img/content/main_page/chamber_member/4.svg" type="image/png">
+                                        <img src="img/content/main_page/chamber_member/4.svg" alt="pic">
+                                    </picture>
+                                </div>
+                                <h4 class="chamber-member__slider_title">
+                                    «Название компании» в две строки
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slide__content">
+                                <div class="slide__content_pic">
+                                    <picture>
+                                        <source srcset="img/content/main_page/chamber_member/5.svg" type="image/png">
+                                        <img src="img/content/main_page/chamber_member/5.svg" alt="pic">
+                                    </picture>
+                                </div>
+                                <h4 class="chamber-member__slider_title">
+                                    «Название компании» в две строки
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slide__content">
+                                <div class="slide__content_pic">
+                                    <picture>
+                                        <source srcset="img/content/main_page/chamber_member/6.svg" type="image/png">
+                                        <img src="img/content/main_page/chamber_member/6.svg" alt="pic">
+                                    </picture>
+                                </div>
+                                <h4 class="chamber-member__slider_title">
+                                    «Название компании» в две строки
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slide__content">
+                                <div class="slide__content_pic">
+                                    <picture>
+                                        <source srcset="img/content/main_page/chamber_member/3.svg" type="image/png">
+                                        <img src="img/content/main_page/chamber_member/3.svg" alt="pic">
+                                    </picture>
+                                </div>
+                                <h4 class="chamber-member__slider_title">
+                                    «Название компании» в две строки
+                                </h4>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="#" class="link__next link__next-mob">Узнать больше</a>
+                </div>
+                <!-- end chamber-member__block -->
+            </div>
+
+            <div class="info__block">
+                <div class="info__block_filter"></div>
+                <div class="wrapper">
+                    <div class="info__block_content">
+                        <h3 class="info__title">
+                            Кыргызско-японская торговая палата<br>
+                            с нетерпением ждет возможности <br>
+                            приветствовать вас в качестве члена
+                        </h3>
+                        <p class="info__desc">
+                            Стоит отметить, что медиамикс транслирует институциональный конкурент,<br>
+                             невзирая на действия конкурентов. Рекламное сообщество, анализируя <br>
+                             результаты рекламной кампании, детерминирует эмпирический медиаплан. <br>
+                             Тем не менее, медиаплан нейтрализует креативный имидж предприятия.
+                        </p>
+                    </div>
+                    <div class="info__items">
+                        <div class="info__item">
+                            <p class="info__item_text">
+                                Свяжитесь с нами
+                            </p>
+                            <span class="info__item_small-text">
+                                Ответим на ваши вопросы
+                            </span>
+                        </div>
+                        <div class="info__item info__item_contacts">
+                            <div class="info__contact_number">
+                                <a href="#" class="info__contact_phone">+996 (456) 452 256</a>
+                                <a href="#" class="info__contact_email">example@info.ru</a>
+                            </div>
+                            <div class="info__contact_social">
+                                <div class="social__items">
+                                    <a href="#" class="social__item social__item_fb"></a>
+                                    <a href="#" class="social__item social__item_tw"></a>
+                                    <a href="#" class="social__item social__item_yt"></a>
+                                    <a href="#" class="social__item social__item_inst"></a>
+                                </div>
+                            </div>
+                            <div class="info__contact_btn">
+                                <a href="#" class="btn btn-default info__btn">Заявка на членство</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end info block -->
+		</main>
+		<div class="page__footer">
+			<footer class="footer">
+				<div class="wrapper">
+					<div class="footer__top">
+                        <a href="index.html" class="footer__logo"><img src="img/logo.svg" alt="KJCC"></a>
+                        <div class="footer__menu_items">
+                            <div class="footer__item">
+                                <div class="footer__item_title">О палате</div>
+                                <a href="#" class="footer__item_sub">Деятельность</a>
+                                <a href="#" class="footer__item_sub">Комитеты палаты</a>
+                                <a href="#" class="footer__item_sub">Управление и персонал</a>
+                                <a href="#" class="footer__item_sub">Совет директоров</a>
+                            </div>
+                            <div class="footer__item">
+                                <div class="footer__item_title">Членство</div>
+                                <a href="#" class="footer__item_sub">Категории</a>
+                                <a href="#" class="footer__item_sub">Члены палаты</a>
+                                <a href="#" class="footer__item_sub">Преимущества</a>
+                                <a href="#" class="footer__item_sub">Заявка на вступление</a>
+                                <a href="#" class="footer__item_sub">Партнеры</a>
+                            </div>
+                            <div class="footer__item">
+                                <div class="footer__item_title">Медиа-центр</div>
+                                <a href="#" class="footer__item_sub">Медиа центр</a>
+                                <a href="#" class="footer__item_sub">События</a>
+                                <a href="#" class="footer__item_sub">Новости палаты</a>
+                                <a href="#" class="footer__item_sub">Новости членов палаты</a>
+                                <a href="#" class="footer__item_sub">Вестник палаты</a>
+                            </div>
+                            <div class="footer__item">
+                                <div class="footer__item_title">Контакты</div>
+                                <a href="#" class="footer__item_sub footer__item_adress">
+                                    720011, Кыргызстанг. Бишкек, ул. Юсупа Абдрахманова, 56, оф. 45
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <p class="footer__copy">
+                            © 2023, Kyrgyz-Japan Chamber of Commerce. Обмен знаниями и опытом о Кыргызстане и Японии
+                        </p>
+                        <a href="#" class="footer__dev">
+                            Создание сайта — Weltkind
+                        </a>
+                    </div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<!-- sidebar -->
+	<div class="sidebar">
+		<div class="sidebar__block">
+            <div class="wrapper">
+                <div class="sidebar__menu_items">
+                    <div class="sidebar__menu_item">
+                        <a href="#" class="sidebar__menu_link">О нас</a>
+                    </div>
+                    <div class="sidebar__menu_item">
+                        <a href="#" class="sidebar__menu_link">Членство</a>
+                    </div>
+                    <div class="sidebar__menu_item sidebar__menu_item-set">
+                        <p class="sidebar__menu_link">медиа-центр</p>
+                        <span class="sidebar__menu_set"></span>
+                        <div class="sidebar__sub-menu_items">
+                            <div class="sidebar__sub-menu_item">
+                                <a href="#" class="sidebar__sub-menu_link">Категории</a>
+                            </div>
+                            <div class="sidebar__sub-menu_item">
+                                <a href="#" class="sidebar__sub-menu_link">Члены палаты</a>
+                            </div>
+                            <div class="sidebar__sub-menu_item">
+                                <a href="#" class="sidebar__sub-menu_link">Преимущества</a>
+                            </div>
+                            <div class="sidebar__sub-menu_item">
+                                <a href="#" class="sidebar__sub-menu_link">Заявка на вступление</a>
+                            </div>
+                            <div class="sidebar__sub-menu_item">
+                                <a href="#" class="sidebar__sub-menu_link">Партнеры</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar__menu_item">
+                        <a href="#" class="sidebar__menu_link">контакты</a>
+                    </div>
+                </div>
+                <!-- end sidebar menu  -->
+
+                <div class="sidebar__contacts">
+                    <a class="sidebar__contacts_link sidebar__contacts_link-lang">English</a>
+                    <a class="sidebar__contacts_link sidebar__contacts_link-phone">+996 (456) 452 256</a>
+                    <a class="sidebar__contacts_link sidebar__contacts_link-email">example@info.ru</a>
+                    <a class="btn btn-default sidebar__contact_btn">Заявка на членство</a>
+                </div>
+            </div>
+		</div>
+	</div>
+
+    <!-- mobile search  -->
+    <div class="search-overlay"></div>
+    <div class="search__mobile">
+        <div class="wrapper">
+            <div class="search__mobile_form">
+                <form action="#">
+                    <div class="search__mobile-form_items">
+                        <div class="search__mobile-form_field">
+                            <input type="text" placeholder="поиск по сайту" class="search__form_input search__mobile_input">
+                            <button type="reset" class="search__mobile-form_reset"></button>
+                        </div>
+                        <button class="search__form_btn search__form_btn-clear" onclick="showHideMobSearch()"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/core.js"></script>
+</body>
+</html>

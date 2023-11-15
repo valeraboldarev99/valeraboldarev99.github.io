@@ -1,0 +1,168 @@
+.clear {
+	clear: both;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+    background: #fff;
+	height: 100%;
+	font-size: 15px;
+    font-weight: 400;
+	line-height: 1.4;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+}
+
+* {
+	outline: none;
+	box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 44px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: var(--black-color);
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    margin-bottom: 40px;
+    color: var(--black-color);
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 24px;
+    color: var(--black-color);
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+table {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border-collapse: collapse;
+}
+
+tr,
+th,
+td {
+	border-collapse: collapse;
+}
+
+div {
+	vertical-align: top;
+}
+
+img {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	max-width: 100%;
+    width: 100%;
+	height: auto;
+	border-style: none;
+}
+
+textarea {
+	overflow: auto;
+	resize: vertical;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+	text-decoration: none;
+	outline: none;
+}
+
+dt,
+dd {
+	line-height: 1.4;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+
+q {
+	quotes: '«' '»';
+	font-style: italic;
+}
+
+q q {
+	quotes: '„' '“';
+	font-style: italic;
+}
+
+blockquote {
+	padding: 1.5em;
+	margin: 3em;
+	border-left: 5px solid var(--text-active-color);
+	font-size: 1.2em;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid var(--text-gray-desc);
+	margin: 1em 0;
+	padding: 0;
+}
+
+mark {
+	background-color: #fff;
+	color: #000;
+}
+
+small {
+	font-size: 80%;
+}
