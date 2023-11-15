@@ -549,7 +549,11 @@ body {
     padding-right: 15px;
 }
 
-.link__arrow:hover {
+.link__next-mob {
+    display: none;
+}
+
+.link__next:hover {
     color: var(--hover-active-color);
 }
 
