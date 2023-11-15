@@ -24,8 +24,8 @@ $(document).ready(function () {
     $('.chamber-member__slider').slick({
 		slidesToScroll:1,
 		slidesToShow:6,
-		// autoplay: true,
-		// autoplaySpeed: 3000,
+		autoplay: true,
+		autoplaySpeed: 3000,
 		pauseOnHover:true,
 		arrows:true,
 		dots:false,
