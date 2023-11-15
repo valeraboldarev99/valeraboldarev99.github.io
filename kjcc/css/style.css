@@ -1140,8 +1140,9 @@ body {
 	z-index: 9999;
 	top: 106px;
 	left: 0;
-	overflow: auto;
+	overflow: scroll;
 	width: 100%;
+    /* min-height: 200px; */
 	height: calc(100% - 107px);
     overflow: scroll;
     display: none;
@@ -1152,6 +1153,11 @@ body {
 
 .sidebar_opened {
     display: block;
+}
+
+.sidebar__block {
+    position: relative;
+    height: 100%;
 }
 
 .sidebar__menu_items {
@@ -1206,9 +1212,12 @@ body {
 }
 
 .sidebar__contacts {
-
-    margin-top: 50px;
+    /* position: absolute; */
     padding-top: 50px;
+    /* bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--wrapper-width); */
 }
 
 .sidebar__contacts_link {
