@@ -310,6 +310,7 @@ body {
     font-weight: 500;
     white-space: nowrap;
     cursor: pointer;
+    text-align: center;
 }
 
 .btn-default {
@@ -790,6 +791,10 @@ body {
 
 .digitals__btn {
     padding: 15px 25px;
+}
+
+.digitals__btn-mob {
+    display: none;
 }
 
 .digitals__item_counts {

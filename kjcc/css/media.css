@@ -768,92 +768,62 @@
         display: none;
     }
 
-
-
-
-
-
     .digitals__block {
-        height: 450px;
-        padding: 146px 0;
-        background: url('../img/content/main_page/digitals_bg.png') left bottom no-repeat;
-        background-size: contain;
-        position: relative;
-    }
-
-    .digitals__block_filter {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        background-color: #454D54;
-        opacity: 1;
-        mix-blend-mode: multiply;
-        z-index: 1;
+        min-height: 630px;
+        height: auto;
+        padding: 50px 0 60px 0;
+        background: url('../img/content/main_page/digitals_bg.png') -500px 0 no-repeat;
+        background-size: cover;
     }
 
     .digitals__items {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        z-index: 2;
-        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .digitals__item {
+        margin-bottom: 40px;
     }
 
     .digitals__item_title {
-        min-width: 560px;
+        min-width: 80%;
+        width: 100%;
     }
 
     .digitals__btn {
-        padding: 15px 25px;
+        display: none;
+    }
+
+    .digitals__btn-mob {
+        display: block;
+        padding: 12px 25px;
+        width: 100%;
     }
 
     .digitals__item_counts {
-        width: 280px;
-        padding-left: 40px;
-        position: relative;
-        border-left: 1px solid rgba(255, 255, 255, 0.2);
+        width: 100%;
+        padding-left: 30px;
     }
 
     .digitals__item_counts:last-child {
-        min-width: 310px;
-    }
-
-    .digitals__item_counts::before {
-        content: '';
-        position: absolute;
-        left: -1px;
-        top: 0;
-        width: 1px;
-        height: 40%;
-        background-color: var(--text-active-color);
-        display: block;
+        min-width: 100%;
+        width: 100%;
     }
 
     .digitals__title {
-        font-size: 30px;
-        font-weight: 500;
-        line-height: 39px;
+        font-size: 28px;
+        line-height: 32px;
         margin-bottom: 30px;
-        color: var(--white-color);
-        letter-spacing: -1.2px;
+        letter-spacing: -1.12px;
     }
 
     .digitals__item_count {
         font-size: 55px;
         line-height: 66px;
-        font-weight: 500;
-        color: var(--white-color);
-        margin-bottom: 10px;
-        letter-spacing: -3.3px;
     }
 
     .digitals__item_desc {
         font-size: 15px;
-        font-weight: 400;
         line-height: 21px;
-        color: var(--white-color);
     }
 
     .news__block {
