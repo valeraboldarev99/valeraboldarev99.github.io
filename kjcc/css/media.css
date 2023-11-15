@@ -987,7 +987,8 @@
     }
 
     .footer__logo {
-        width: 100%;
+        width: auto;
+        height: 65px;
         margin-bottom: 20px;
     }
     
