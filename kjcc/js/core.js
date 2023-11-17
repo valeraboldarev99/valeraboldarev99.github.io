@@ -109,6 +109,22 @@ $(document).ready(function () {
         }
 	});
     /*end sub mob menu*/
+
+    /*custom select*/
+    $('.js-select').on('mouseenter', function() {
+        $(this).find('.select__items').css('display', 'block');
+    });
+    $('.js-select').on('mouseleave', function() {
+        $(this).find('.select__items').css('display', 'none');
+    });
+
+    $('.js-select label').on('click', function() {
+        var select_name = $(this).data('select_name');
+        var city = $(this).html();
+        $('#'+ select_name +'').html(city);
+        $('#'+ select_name +' + .js-select-items').css('display', 'none');
+    });
+    /*end custom select*/
 });
 
 // search field 

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>KJCC | Заявка на вступление в Палату</title>
+	<link rel="stylesheet" href="css/slick.css">
+	<!-- <link rel="stylesheet" href="css/jquery.fancybox.css"> -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<div class="page">
+		<div class="page__header">
+			<div class="wrapper">
+				<header class="header__block">
+					<div class="header__left">
+                        <a href="index.html" class="header__logo">
+                            <img src="img/logo.svg" alt="KJCC">
+                        </a>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__info">
+                            <div class="header__contacts">
+                                <a href="#" class="header__contacts_link header__contacts_link_phone">+996 (456) 452 256</a>
+                                <a href="#" class="header__contacts_link header__contacts_link_email">example@info.ru</a>
+                            </div>
+                            
+                            <div class="header__menu">
+                                <div class="header__menu_items">
+                                    <div class="header__menu_item">
+                                        <a href="#" class="header__menu_link">О нас</a>
+                                        <span class="header__menu_set"></span>
+                                        <div class="header__menu_drop">
+                                            <div class="header__inner-menu">
+                                                <div class="header__inner-menu_items">
+                                                    <div class="header__inner-menu_item">
+                                                        <a href="#" class="header__inner-menu_link">О компании</a>
+                                                    </div>
+                                                    <div class="header__inner-menu_item">
+                                                        <a href="#" class="header__inner-menu_link">Новости </a>
+                                                    </div>
+                                                    <div class="header__inner-menu_item">
+                                                        <a href="#" class="header__inner-menu_link">Вакансии</a>
+                                                    </div>
+                                                    <div class="header__inner-menu_item">
+                                                        <a href="#" class="header__inner-menu_link">Длинное название подпункта главного меню</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header__menu_item">
+                                        <a href="#" class="header__menu_link">Членство</a>
+                                        <span class="header__menu_set"></span>
+                                    </div>
+                                    <div class="header__menu_item">
+                                        <a href="#" class="header__menu_link">Медиа-центр</a>
+                                        <span class="header__menu_set"></span>
+                                        <div class="header__menu_drop">
+                                            <div class="header__inner-menu">
+                                                <div class="header__inner-menu_items">
+                                                    <div class="header__inner-menu_item">
+                                                        <a href="#" class="header__inner-menu_link">События</a>
+                                                    </div>
+                                                    <div class="header__inner-menu_item">
+                                                        <a href="#" class="header__inner-menu_link">Новости палаты</a>
+                                                    </div>
+                                                    <div class="header__inner-menu_item">
+                                                        <a href="#" class="header__inner-menu_link">Новости членов палаты</a>
+                                                    </div>
+                                                    <div class="header__inner-menu_item">
+                                                        <a href="#" class="header__inner-menu_link">Вестник палаты</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header__menu_item">
+                                        <a href="#" class="header__menu_link">Контакты</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__search">
+                            <div id="search__btn" class="search__btn" onclick="showHideSearch()"></div>
+                            <div id="search__form" class="search__form">
+                                <form action="#">
+                                    <input type="text" placeholder="поиск по сайту" class="search__form_input">
+                                    <button type="submit" class="search__form_btn search__form_btn-search"></button>
+                                    <button class="search__form_btn search__form_btn-clear" onclick="showHideSearch()"></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="header__lang">
+                            <a href="#" class="header__lang_link">en</a>
+                        </div>
+                        <div class="header__btn">
+                            <a href="#" class="btn btn-default">Заявка на членство</a>
+                        </div>
+                    </div>
+                    <div class="header__mobile">
+                        <div id="search__mobile_btn" class="header__mobile_btn search__mobile_btn" onclick="showHideMobSearch()"></div>
+                        <a href="#" class="header__mobile_btn header__mobile_phone"></a>
+                        <div id="sidebar-open" class="header__mobile_btn header__mobile_hamburger"></div>
+                    </div>
+				</header>
+			</div>
+		</div>
+		<main class="page__main">
+            <div class="page__top">
+                <div class="wrapper">
+                    <div class="breadcrumbs">
+                        <div class="breadcrumbs__items">
+                            <div class="breadcrumbs__item">
+                                <a href="#" class="breadcrumbs__link">Главная</a>
+                                <span class="breadcrumbs__separator">/</span>
+                            </div>
+                            <div class="breadcrumbs__item">
+                                <a href="#" class="breadcrumbs__link">Членство</a>
+                                <span class="breadcrumbs__separator">/</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="page__title">Заявка на вступление в Палату</h1>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div class="request__items">
+                    <div class="request__item request__item_left">
+                        <p>
+                            KJCC выполняет свою миссию, предоставляя индивидуальным и корпоративным членам сетевую платформу. Он способствует обсуждению тем, связанных с экономикой, и других тем, представляющих общий интерес, касающихся двух стран. Он поддерживает хорошие отношения с властями и экономическими организациями обеих стран и поддерживает их, развивая и поддерживая двусторонние отношения.
+                        </p>
+
+                        <ul class="request__list_items">
+                            <li class="request__list_item request__list_item-first">
+                                Определите категорию членства;
+                            </li>
+                            <li class="request__list_item request__list_item-second">
+                                Заполните заявку на вступление и отправьте ее. Мы открыты к вступлению новых участников, однако тщательно оцениваем каждую заявку на соответствие требованиям и целям бизнес-ассоциации.
+                            </li>
+                            <li class="request__list_item request__list_item-third">
+                                Вступить могут как зарубежные, так и местные компании, которые осуществляют свою деятельность в Кыргызстане.
+                            </li>
+                        </ul>
+
+                        <div class="request__contacts_block">
+                            <h3 class="request__contacts_title">Свяжитесь с нами</h3>
+                            <p>По вопросам вступления в  торговую палату <br>
+                                 вы можете обратиться по контактам</p>
+                            <a href="#" class="request__contacts_phone"><span class="red-color">+996</span> (456) 452 256</a>
+                            <a href="#" class="request__contacts_email">example@info.ru</a>
+                        </div>
+                    </div>
+                    <div class="request__item request__item_right">
+                        <form action="#">
+                            <div class="request__form">
+                                <div class="request__form_item">
+                                    <label for="name" class="request__form_label">
+                                        Имя
+                                        <span class="request__form-required">*</span>
+                                    </label>
+                                    <input type="text" id="name" class="request__form_input" required>
+                                </div>
+
+                                <div class="request__form_item">
+                                    <label for="lastname" class="request__form_label">
+                                        Фамилия
+                                        <span class="request__form-required">*</span>
+                                    </label>
+                                    <input type="text" id="lastname" class="request__form_input" required>
+                                </div>
+
+                                <div class="request__form_item">
+                                    <label for="phone" class="request__form_label">
+                                        Телефон
+                                        <span class="request__form-required">*</span>
+                                    </label>
+                                    <input type="text" id="phone" class="request__form_input" required>
+                                </div>
+
+                                <div class="request__form_item">
+                                    <label for="email" class="request__form_label">
+                                        E-mail организации
+                                        <span class="request__form-required">*</span>
+                                    </label>
+                                    <input type="text" id="email" class="request__form_input" required>
+                                </div>
+
+                                <div class="request__form_item">
+                                    <!-- <label for="country" class="request__form_label">
+                                        Страна
+                                        <span class="request__form-required">*</span>
+                                    </label>
+                                    <select name="country" id="country" class="request__form_select" required>
+                                        <option value="" disabled selected>Выберите страну</option>
+                                        <option value="1">Кыргызстан</option>
+                                        <option value="2">Казахстан</option>
+                                        <option value="3">Россия</option>
+                                        <option value="4">Япония</option>
+                                        <option value="5">Китай</option>
+                                    </select> -->
+                                    <p class="request__form_label">
+                                        Страна
+                                        <span class="request__form-required">*</span>
+                                    </p>
+                                    <div class="form__select js-select">
+                                        <p class="select-default" id="country">
+                                            Выберите страну
+                                        </p>
+                                        <div class="select__items js-select-items">
+                                            <label for="country-1" data-select_name="country">Кыргызстан</label><input type="radio" id="country-1" name="country">
+                                            <label for="country-2" data-select_name="country">Казахстан</label><input type="radio" id="country-2" name="country">
+                                            <label for="country-3" data-select_name="country">Россия</label><input type="radio" id="country-3" name="country">
+                                            <label for="country-4" data-select_name="country">Япония</label><input type="radio" id="country-4" name="country">
+                                            <label for="country-5" data-select_name="country">Китай</label><input type="radio" id="country-5" name="country">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="request__form_item">
+                                    <p class="request__form_label">
+                                        Город
+                                        <span class="request__form-required">*</span>
+                                    </p>
+                                    <div class="form__select js-select">
+                                        <p class="select-default" id="city">
+                                            Выберите город
+                                        </p>
+                                        <div class="select__items js-select-items">
+                                            <label for="city-1" data-select_name="city">Бишкек</label><input type="radio" id="city-1" name="city">
+                                            <label for="city-2" data-select_name="city">Москва</label><input type="radio" id="city-2" name="city">
+                                            <label for="city-3" data-select_name="city">Астана</label><input type="radio" id="city-3" name="city">
+                                            <label for="city-4" data-select_name="city">Токио</label><input type="radio" id="city-4" name="city">
+                                            <label for="city-5" data-select_name="city">Пекин</label><input type="radio" id="city-5" name="city">
+                                            <label for="city-6" data-select_name="city">Ош</label><input type="radio" id="city-6" name="city">
+                                            <label for="city-7" data-select_name="city">Талас</label><input type="radio" id="city-7" name="city">
+                                            <label for="city-8" data-select_name="city">Шанхай</label><input type="radio" id="city-8" name="city">
+                                            <label for="city-9" data-select_name="city">Алматы</label><input type="radio" id="city-9" name="city">
+                                            <label for="city-10" data-select_name="city">Санкт-Петербур</label><input type="radio" id="city-10" name="city">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="request__form_item request__form_item-big">
+                                    <label for="address" class="request__form_label">
+                                        Адрес организации
+                                        <span class="request__form-required">*</span>
+                                    </label>
+                                    <input type="text" id="address" class="request__form_input" required>
+                                </div>
+
+                                <div class="request__form_item request__form_item-big">
+                                    <label for="postcode" class="request__form_label">
+                                        Почтовый индекс
+                                        <span class="request__form-required">*</span>
+                                    </label>
+                                    <input type="text" id="postcode" class="request__form_input" required>
+                                </div>
+
+                                <div class="request__form_item request__form_item-big">
+                                    <label for="message" class="request__form_label">
+                                        Мотивационное письмо
+                                        <span class="request__form-required">*</span>
+                                    </label>
+                                    <textarea name="message" id="message" class="request__form_input" rows="5" required></textarea>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+		</main>
+		<div class="page__footer">
+			<footer class="footer">
+				<div class="wrapper">
+					<div class="footer__top">
+                        <a href="index.html" class="footer__logo"><img src="img/logo.svg" alt="KJCC"></a>
+                        <div class="footer__menu_items">
+                            <div class="footer__item">
+                                <div class="footer__item_title">О палате</div>
+                                <a href="#" class="footer__item_sub">Деятельность</a>
+                                <a href="#" class="footer__item_sub">Комитеты палаты</a>
+                                <a href="#" class="footer__item_sub">Управление и персонал</a>
+                                <a href="#" class="footer__item_sub">Совет директоров</a>
+                            </div>
+                            <div class="footer__item">
+                                <div class="footer__item_title">Членство</div>
+                                <a href="#" class="footer__item_sub">Категории</a>
+                                <a href="#" class="footer__item_sub">Члены палаты</a>
+                                <a href="#" class="footer__item_sub">Преимущества</a>
+                                <a href="#" class="footer__item_sub">Заявка на вступление</a>
+                                <a href="#" class="footer__item_sub">Партнеры</a>
+                            </div>
+                            <div class="footer__item">
+                                <div class="footer__item_title">Медиа-центр</div>
+                                <a href="#" class="footer__item_sub">Медиа центр</a>
+                                <a href="#" class="footer__item_sub">События</a>
+                                <a href="#" class="footer__item_sub">Новости палаты</a>
+                                <a href="#" class="footer__item_sub">Новости членов палаты</a>
+                                <a href="#" class="footer__item_sub">Вестник палаты</a>
+                            </div>
+                            <div class="footer__item">
+                                <div class="footer__item_title">Контакты</div>
+                                <a href="#" class="footer__item_sub footer__item_adress">
+                                    720011, Кыргызстанг. Бишкек, ул. Юсупа Абдрахманова, 56, оф. 45
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <p class="footer__copy">
+                            © 2023, Kyrgyz-Japan Chamber of Commerce. Обмен знаниями и опытом о Кыргызстане и Японии
+                        </p>
+                        <a href="#" class="footer__dev">
+                            Создание сайта — Weltkind
+                        </a>
+                    </div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<!-- sidebar -->
+	<div class="sidebar">
+		<div class="sidebar__block">
+            <div class="wrapper">
+                <div class="sidebar__menu_items">
+                    <div class="sidebar__menu_item">
+                        <a href="#" class="sidebar__menu_link">О нас</a>
+                    </div>
+                    <div class="sidebar__menu_item">
+                        <a href="#" class="sidebar__menu_link">Членство</a>
+                    </div>
+                    <div class="sidebar__menu_item sidebar__menu_item-set">
+                        <p class="sidebar__menu_link">медиа-центр</p>
+                        <span class="sidebar__menu_set"></span>
+                        <div class="sidebar__sub-menu_items">
+                            <div class="sidebar__sub-menu_item">
+                                <a href="#" class="sidebar__sub-menu_link">Категории</a>
+                            </div>
+                            <div class="sidebar__sub-menu_item">
+                                <a href="#" class="sidebar__sub-menu_link">Члены палаты</a>
+                            </div>
+                            <div class="sidebar__sub-menu_item">
+                                <a href="#" class="sidebar__sub-menu_link">Преимущества</a>
+                            </div>
+                            <div class="sidebar__sub-menu_item">
+                                <a href="#" class="sidebar__sub-menu_link">Заявка на вступление</a>
+                            </div>
+                            <div class="sidebar__sub-menu_item">
+                                <a href="#" class="sidebar__sub-menu_link">Партнеры</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar__menu_item">
+                        <a href="#" class="sidebar__menu_link">контакты</a>
+                    </div>
+                </div>
+                <!-- end sidebar menu  -->
+
+                <div class="sidebar__contacts">
+                    <a class="sidebar__contacts_link sidebar__contacts_link-lang">English</a>
+                    <a class="sidebar__contacts_link sidebar__contacts_link-phone">+996 (456) 452 256</a>
+                    <a class="sidebar__contacts_link sidebar__contacts_link-email">example@info.ru</a>
+                    <a class="btn btn-default sidebar__contact_btn">Заявка на членство</a>
+                </div>
+            </div>
+		</div>
+	</div>
+
+    <!-- mobile search  -->
+    <div class="search-overlay"></div>
+    <div class="search__mobile">
+        <div class="wrapper">
+            <div class="search__mobile_form">
+                <form action="#">
+                    <div class="search__mobile-form_items">
+                        <div class="search__mobile-form_field">
+                            <input type="text" placeholder="поиск по сайту" class="search__form_input search__mobile_input">
+                            <button type="reset" class="search__mobile-form_reset"></button>
+                        </div>
+                        <button class="search__form_btn search__form_btn-clear" onclick="showHideMobSearch()"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/core.js"></script>
+</body>
+</html>
