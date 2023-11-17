@@ -523,7 +523,7 @@
 
     p {
         font-size: 15px;
-        line-height: 21;
+        line-height: 21px;
     }
 
     h1 {
@@ -1072,4 +1072,47 @@
     .sidebar__contact_btn {
         padding: 15px 25px;
     }
+
+    /* inner pages */
+    .page__top {
+        padding-top: 35px;
+    }
+
+    .breadcrumbs__items {
+        margin-bottom: 7px;
+    }
+
+    .breadcrumbs__separator {
+        padding: 0 10px;
+    }
+
+    .page__title {
+        font-size: 28px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .request__contacts_block {
+        flex-wrap: wrap;
+    }
+
+ 
+    .request__item_right {
+        padding: 30px 0;
+        margin-bottom: 30px;
+        z-index: 5;
+    }
+
+    .request__form_item {
+        width: 100%;
+    }
+
+    .request__form_title {
+        font-size: 20px;
+    }
+
+    .request__form_radio-block {
+        padding: 5px 0 25px 0;
+    }
+
 }
