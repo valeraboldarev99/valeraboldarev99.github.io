@@ -331,7 +331,7 @@
     }
 
     .digitals__item_counts {
-        width: 190px;
+        width: 200px;
         padding-left: 25px;
     }
 
@@ -735,6 +735,7 @@
         position: absolute;
         list-style: none;
         padding: 0;
+        margin: 0;
         left: 50%;
         transform: translateX(-50%);
         bottom: -40px;
@@ -746,6 +747,7 @@
         color: #ACACAC;
         background-color: #ACACAC;
         margin: 0 8px;
+        padding: 0;
         width: 10px;
         height: 10px;
         border: 2px solid #ACACAC;
