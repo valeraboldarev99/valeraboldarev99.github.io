@@ -125,6 +125,10 @@ $(document).ready(function () {
         $('#'+ select_name +' + .js-select-items').css('display', 'none');
     });
     /*end custom select*/
+
+    /*custom hight*/
+    var request__block_height = $('.request__items').innerHeight();
+    $('.js-request__block').css('height', request__block_height);
 });
 
 // search field 

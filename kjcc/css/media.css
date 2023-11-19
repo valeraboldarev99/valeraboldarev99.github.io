@@ -1092,14 +1092,34 @@
         margin-bottom: 20px;
     }
 
+    .request__block {
+        position: relative;
+        /* height: 2260px; */
+    }
+
+    .request__items {
+        position: absolute;
+        left: 0;
+    }
+
+    .request__item_left {
+        width: var(--wrapper-width);
+        margin: 0 auto 40px auto;
+    }
+
+    .request__form {
+        width: var(--wrapper-width);
+        margin: 0 auto;
+    }
+
     .request__contacts_block {
         flex-wrap: wrap;
     }
 
- 
     .request__item_right {
         padding: 30px 0;
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
+        margin-bottom: 0;
         z-index: 5;
     }
 
