@@ -10,6 +10,11 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/air-datepicker.css">
+	<link rel="stylesheet" href="css/custom-datepicker.css">
+
+    <!-- <script src="js/datepicker/ru.js"></script> -->
+    <!-- <script src="js/datepicker/en.js"></script> -->
 </head>
 <body>
 	<div class="page">
@@ -137,6 +142,7 @@
                             <a href="#" class="events__menu_item">прошедшие</a>
                         </div>
                     </div>
+                    
                     <div class="events__block_left">
                         <div class="events__items">
                             <div class="events__item">
@@ -249,9 +255,11 @@
                         </div>
                     </div>
                     <div class="events__block_right">
-                        <div class="events__calendar">
+                        <!-- <div class="events__calendar">
                             Календарь
-                        </div>
+                        </div> -->
+                        <div class="datepicker-here" id="calendar"></div>
+                        <!-- <input type="text" id=""> -->
                     </div>
                 </div>
                 <div class="pagination">
@@ -402,6 +410,51 @@
 
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/slick.js"></script>
+    <script src="js/air-datepicker.js"></script>
 	<script src="js/core.js"></script>
+
+    <script>
+        new AirDatepicker('#calendar', {
+            onSelect({date, formattedDate, datepicker})
+            {
+                alert(formattedDate);
+                // console.log(formattedDate);
+            },
+            onChangeViewDate({month, year, decade}) {
+                // console.log(month);
+                // console.log(decade);
+                // var a = $('.air-datepicker-cell.-day-[data-year="2023"][data-month="10"][data-date="10"]');
+            },
+            onRenderCell({date, cellType}) {
+                if (cellType === 'day') {
+                    // console.log('render');
+                    
+                    // if(date.getDate() == 10 && date.getMonth() == 10 && date.getFullYear() == 2023) {
+                    //     return {
+                    //         classes: '-event-'
+                    //     }
+                    // }
+
+                    if(date.getFullYear() == 2023) {
+                        if(date.getMonth() == 10) {
+                            if(date.getDate() == 1 ||
+                                date.getDate() == 7 || 
+                                date.getDate() == 12 || 
+                                date.getDate() == 16 || 
+                                date.getDate() == 19 || 
+                                date.getDate() == 23)
+                            {
+                                return {
+                                    classes: '-event-'
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+
 </body>
 </html>
