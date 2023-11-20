@@ -514,6 +514,42 @@
         padding: 40px 50px;
         margin-bottom: 40px;
     }
+
+    .events__block_left {
+        width: 100%;
+    }
+    
+    .events__item_pic {
+        width: 280px;
+    }
+    
+    .events__item_info {
+        width: 460px;
+    }
+    
+    .events__item_title {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    
+    .pagination {
+        margin: 20px 0 40px 0;
+    }
+    
+    .events__block_right {
+        display: none;
+    }
+    
+    /* .events__calendar {
+        width: 280px;
+        height: 290px;
+        background-color: var(--advantages-bg-color);
+        border-radius: 10px;
+        text-align: center;
+        line-height: 290px;
+        font-weight: 600;
+        font-size: 20px;
+    } */
 }
 
 @media screen and (max-width:800px) {
