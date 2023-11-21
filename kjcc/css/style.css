@@ -1781,17 +1781,6 @@ body {
     width: 300px;
 }
 
-.events__calendar {
-    width: 280px;
-    height: 290px;
-    background-color: var(--advantages-bg-color);
-    border-radius: 10px;
-    text-align: center;
-    line-height: 290px;
-    font-weight: 600;
-    font-size: 20px;
-}
-
 .events__check-date {
     display: none;
 }

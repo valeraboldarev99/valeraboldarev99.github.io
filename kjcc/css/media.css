@@ -1230,5 +1230,39 @@
     .request__form_radio-block {
         padding: 5px 0 25px 0;
     }
+    
+    .events__item {
+        flex-wrap: wrap;
+    }
 
+    .events__item_pic {
+        width: 100%;
+        margin-bottom: 20q;
+    }
+
+    .events__item_info {
+        width: 100%;
+    }
+
+    .events__item_title {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .pagination {
+        margin: 20px 0 40px 0;
+    }
+
+    .events__block_right {
+        top: 120px;
+    }
+
+    .events__check-date {
+        font-size: 12px;
+    }
+
+    .events__check-date_icon::before {
+        width: 16px;
+        height: 16px;
+    }
 }
