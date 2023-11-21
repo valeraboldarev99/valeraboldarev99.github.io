@@ -6,12 +6,12 @@
 	<title>KJCC | Заявка на вступление в Палату</title>
 	<link rel="stylesheet" href="css/slick.css">
 	<!-- <link rel="stylesheet" href="css/jquery.fancybox.css"> -->
+	<link rel="stylesheet" href="css/air-datepicker.css">
+	<link rel="stylesheet" href="css/custom-datepicker.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
-	<link rel="stylesheet" href="css/air-datepicker.css">
-	<link rel="stylesheet" href="css/custom-datepicker.css">
 
     <!-- <script src="js/datepicker/ru.js"></script> -->
     <!-- <script src="js/datepicker/en.js"></script> -->
@@ -142,7 +142,9 @@
                             <a href="#" class="events__menu_item">прошедшие</a>
                         </div>
                     </div>
-                    
+                    <div id="js-events__check-date" class="events__check-date" onclick="openCloseCalendar()">
+                        <span class="events__check-date_icon">Выбрать дату</span><span id="js-checked-date" class="checked-date"></span>
+                    </div>
                     <div class="events__block_left">
                         <div class="events__items">
                             <div class="events__item">
@@ -254,12 +256,8 @@
                             <!-- end events__item -->
                         </div>
                     </div>
-                    <div class="events__block_right">
-                        <!-- <div class="events__calendar">
-                            Календарь
-                        </div> -->
+                    <div class="events__block_right" id="js-calendar__block">
                         <div class="datepicker-here" id="calendar"></div>
-                        <!-- <input type="text" id=""> -->
                     </div>
                 </div>
                 <div class="pagination">
@@ -415,20 +413,23 @@
 
     <script>
         new AirDatepicker('#calendar', {
+            minDate: new Date('2023.09.25'),
+            maxDate: new Date('2024.01.01'),
+
+            //при выборе даты
             onSelect({date, formattedDate, datepicker})
             {
                 alert(formattedDate);
-                // console.log(formattedDate);
+                openCloseCalendar();            //close calendar
+                updateCalendarBtn(date);        //update mobile calendar btn
             },
+            // при перелистывании календаря 
             onChangeViewDate({month, year, decade}) {
-                // console.log(month);
-                // console.log(decade);
                 // var a = $('.air-datepicker-cell.-day-[data-year="2023"][data-month="10"][data-date="10"]');
             },
+            // генирация страницы календаря
             onRenderCell({date, cellType}) {
                 if (cellType === 'day') {
-                    // console.log('render');
-                    
                     // if(date.getDate() == 10 && date.getMonth() == 10 && date.getFullYear() == 2023) {
                     //     return {
                     //         classes: '-event-'
@@ -453,6 +454,32 @@
                 }
             }
         });
+    </script>
+
+    <script>
+        function openCloseCalendar()
+        {
+            var calendar__block = $('#js-calendar__block');
+            if(calendar__block.css('display') == 'none')
+            {
+                calendar__block.css('display', 'block');
+            }
+            else {
+                calendar__block.css('display', 'none');
+            }
+        }
+
+        function updateCalendarBtn(date)
+        {
+            var months = [
+                'января', 'февраля', 'марта',
+                'апреля', 'мая', 'июня',
+                'июля', 'августа', 'сентября',
+                'октября', 'ноября', 'декабря'
+            ];
+            
+            $('#js-checked-date').text(': ' + date.getDate() + ' ' + months[date.getMonth()]);
+        }
     </script>
 
 
