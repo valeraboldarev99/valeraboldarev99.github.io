@@ -860,6 +860,7 @@ body {
 .news__item {
     width: 31%;
     cursor: pointer;
+    position: relative;
 }
 
 .news__item_pic {
@@ -1694,6 +1695,7 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
+.othes__event_item:hover .news__item_title,
 .events__item:hover .events__item_title {
     color: var(--text-active-color);
 }
@@ -1801,7 +1803,12 @@ body {
     width: 810px;
 }
 .event-cart__sidebar {
-    width: 375px;
+    width: 385px;
+}
+
+.othes__event_item {
+    position: relative;
+    margin-bottom: 30px;
 }
 
 .shared__block {
