@@ -1799,9 +1799,11 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
 .event-cart__content {
     width: 810px;
 }
+
 .event-cart__sidebar {
     width: 385px;
 }
