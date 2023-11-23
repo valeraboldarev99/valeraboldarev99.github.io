@@ -1367,4 +1367,95 @@
     .shared__text {
         margin: 0 0 10px 0;
     }
+
+    .page__top_bg {
+        padding: 35px 0;
+    }
+
+.page__top_menu {
+    left: 10%;
+    transform: translateX(0);
+    bottom: 20px;
+    width: 100%;
+}
+
+    .page__menu_items {
+        flex-wrap: nowrap;
+    }
+
+    .page__menu_item {
+        margin-right: 15px;
+    }
+
+    .about_pic_block img {
+        width: 100%;
+    }
+
+    .checked-list {
+        width: 100%;
+    }
+
+    .checked-list li {
+        padding: 0 0 0 38px;
+    }
+
+    .advantages__items {
+        margin: 30px 0 30px 0;
+    }
+
+    .advantages__item {
+        width: 100%;
+        padding: 30px 20px;
+        margin-bottom: 10px;
+    }
+
+    .advantage__item_number {
+        margin: 0 10px 0 0;
+    }
+
+    .quote__items {
+        flex-wrap: wrap;
+        padding: 30px 20px;
+    }
+
+    .quote__pic {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+    .quote__pic::after {
+        right: -30px;
+        top: 7px;
+        width: 57px;
+        height: 56px;
+    }
+
+    .quote__content {
+        width: 100%;
+    }
+
+    .quote__text {
+        font-size: 15px;
+        line-height: 140%;
+    }
+
+    .file__block {
+        padding: 20px;
+        margin: 30px 0;
+    }
+
+    .file__block::after {
+        right: 20px;
+        width: 46px;
+        height: 46px;
+    }
+
+    .file__block_icon {
+        display: none;
+    }
+
+    .file__block_title {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
 }
