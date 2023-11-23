@@ -1351,6 +1351,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .page__menu_item {
@@ -1947,7 +1948,20 @@ body {
     background: url('../img/shared/lin_hover.svg') center center no-repeat;
 }
 
+.about_pic_block {
+    margin: 40px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about_pic_block img {
+    width: 47%;
+    vertical-align: top;
+}
+
 .checked-list {
+    width: 47%;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -1990,6 +2004,7 @@ body {
     padding: 30px;
     display: flex;
     justify-content: start;
+    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
