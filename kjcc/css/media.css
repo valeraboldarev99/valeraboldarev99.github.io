@@ -1372,12 +1372,14 @@
         padding: 35px 0;
     }
 
-.page__top_menu {
-    left: 10%;
-    transform: translateX(0);
-    bottom: 20px;
-    width: 100%;
-}
+    .page__top_menu {
+        bottom: 20px;
+        overflow-x: scroll;
+    }
+
+    .page__top_menu::-webkit-scrollbar {
+        width: 0;
+    }
 
     .page__menu_items {
         flex-wrap: nowrap;
@@ -1385,6 +1387,7 @@
 
     .page__menu_item {
         margin-right: 15px;
+        white-space: nowrap;
     }
 
     .about_pic_block img {
