@@ -1981,22 +1981,26 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 50px 0;
+    margin: 50px 0 30px 0;
 }
 
 .advantages__item {
-    width: 30%;
+    width: 32%;
     background-color: var(--advantages-bg-color);
     padding: 30px;
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .advantage__item_number {
+    margin: 0;
 }
 .advantages__item_title {
+    margin: 0;
 }
 .advantages__item_desc {
     width: 100%;
+    margin-top: 10px;
 }
