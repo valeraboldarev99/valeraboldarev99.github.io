@@ -18,6 +18,11 @@
         margin-bottom: 35px;
     }
 
+    th,
+    td {
+        min-width: 235px;
+    }
+
     .header__block {
         padding: 15px 0;
     }
