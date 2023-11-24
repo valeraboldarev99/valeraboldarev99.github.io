@@ -380,8 +380,13 @@
     }
 
     .info__block {
+        margin-bottom: -40px;
         padding: 60px 0 120px 0;
         min-height: 400px;
+    }
+
+    .info__block_content {
+        max-width: 65%;
     }
     
     .info__title {
@@ -444,7 +449,11 @@
     .social__item_fb,
     .social__item_tw,
     .social__item_yt,
-    .social__item_inst {
+    .social__item_inst,
+    .social__item_fb:hover,
+    .social__item_tw:hover,
+    .social__item_yt:hover,
+    .social__item_inst:hover {
         background-size: 15px;
     }
 
@@ -469,6 +478,10 @@
 
     .footer__menu_items {
         margin-top: 0px;
+    }
+
+    .footer__item {
+        max-width: 180px;
     }
 
     .footer__bottom {
@@ -788,7 +801,7 @@
     }
 
     .slider__block .slide__info {
-        margin-top: 135px;
+        margin-top: 60px;
         width: 100%;
     }
 
@@ -976,6 +989,10 @@
         top: 50%;
     }
 
+    .chamber-member__slider .slick-dots li:before {
+        display: none;
+    }
+
     .chamber-member__slider .slick-dots li button {
         font-size: 0;
         padding: 0;
@@ -1116,6 +1133,7 @@
         padding: 50px 0;
         min-height: 400px;
         height: auto;
+        margin-bottom: -50px;
     }
 
     .info__title {
@@ -1186,6 +1204,10 @@
         width: 50px;
         height: 50px;
         margin-right: 8px;
+        background-size: 20px;
+    }
+
+    .social__item:hover {
         background-size: 20px;
     }
 

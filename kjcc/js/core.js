@@ -39,8 +39,8 @@ $(document).ready(function () {
 			{
 				breakpoint: 801,
 				settings: {
-		            slidesToShow:1,
-                    centerMode: true,
+		            slidesToShow:2,
+                    // centerMode: true,
 		            arrows:false,
                     dots:true,
 				}
@@ -136,11 +136,9 @@ function showHideSearch()
 {
     if($('#search__form').css('display') == 'none')
     {
-        $('.search__btn').css('display', 'none');
         $('.search__form').css('display', 'inline-block');
     }
     else {
-        $('.search__btn').css('display', 'inline-block');
         $('.search__form').css('display', 'none');
     }
 }
