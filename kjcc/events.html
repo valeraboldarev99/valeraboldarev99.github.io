@@ -103,7 +103,7 @@
                         </div>
                     </div>
                     <div class="header__mobile">
-                        <div id="search__mobile_btn" class="header__mobile_btn search__mobile_btn" onclick="showHideMobSearch()"></div>
+                        <div id="search__mobile_btn" class="header__mobile_btn search__mobile_btn"></div>
                         <a href="#" class="header__mobile_btn header__mobile_phone"></a>
                         <div id="sidebar-open" class="header__mobile_btn header__mobile_hamburger"></div>
                     </div>
@@ -395,7 +395,7 @@
                             <input type="text" placeholder="поиск по сайту" class="search__form_input search__mobile_input">
                             <button type="reset" class="search__mobile-form_reset"></button>
                         </div>
-                        <button class="search__form_btn search__form_btn-clear" onclick="showHideMobSearch()"></button>
+                        <button id="search__form_btn-close"  class="search__form_btn search__form_btn-clear"></button>
                     </div>
                 </form>
             </div>
@@ -455,13 +455,16 @@
     <script>
         function openCloseCalendar()
         {
-            var calendar__block = $('#js-calendar__block');
-            if(calendar__block.css('display') == 'none')
+            if($( window ).width() <= 1299)
             {
-                calendar__block.css('display', 'block');
-            }
-            else {
-                calendar__block.css('display', 'none');
+                var calendar__block = $('#js-calendar__block');
+                if(calendar__block.css('display') == 'none')
+                {
+                    calendar__block.css('display', 'block');
+                }
+                else {
+                    calendar__block.css('display', 'none');
+                }
             }
         }
 

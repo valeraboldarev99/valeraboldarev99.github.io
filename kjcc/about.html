@@ -100,7 +100,7 @@
                         </div>
                     </div>
                     <div class="header__mobile">
-                        <div id="search__mobile_btn" class="header__mobile_btn search__mobile_btn" onclick="showHideMobSearch()"></div>
+                        <div id="search__mobile_btn" class="header__mobile_btn search__mobile_btn"></div>
                         <a href="#" class="header__mobile_btn header__mobile_phone"></a>
                         <div id="sidebar-open" class="header__mobile_btn header__mobile_hamburger"></div>
                     </div>
@@ -143,9 +143,9 @@
                 <p>
                     Поведенческий таргетинг версифицирован. Эластичность спроса специфицирует социометрический рекламный бриф. Рекламная заставка деятельно искажает BTL. Перераспределение бюджета, не меняя концепции, изложенной выше, экономит системный анализ. В рамках концепции Акоффа и Стэка, медиабизнес основан на тщательном анализе данных. Стратегическое планирование, анализируя результаты рекламной кампании, специфицирует эксклюзивный процесс стратегического планирования. Таргетирование, как принято считать, конструктивно. 
                 </p>
-                <div style="margin:40px 0 0 0;display: flex;justify-content: space-between;align-items: flex-start;">
-                    <img src="img/content/about_info.png" alt="about" style="width: 47%; vertical-align: top;">
-                    <ul class="checked-list" style="width: 47%;">
+                <div class="about_pic_block">
+                    <img src="img/content/about_info.png" alt="about">
+                    <ul class="checked-list">
                         <li>
                             <h3>Миссия палаты</h3>
                             <p>Баннерная реклама концентрирует экспериментальный потребительский рынок. Таргетирование спорадически усиливает департамент маркетинга и продаж. Один из признанных классиков маркетинга определяет это так: общество потребления настроено позитивно.</p>
@@ -292,6 +292,17 @@
                         <td>Значение таблицы</td>
                     </tr>
                 </table>
+
+                <div class="file__block">
+                    <div class="file__block_icon">
+                        <img src="img/pdf_file_icon.svg" alt="file">
+                    </div>
+                    <div class="file__block_content">
+                        <p class="file__block_title">Скачать брошюру о преимуществах KJСС</p>
+                        <p class="file__block_text">(PDF, 42.15 MB)</p>
+                    </div>
+                    <a href="#" class="link__open"></a>
+                </div>
             </div>
             <!-- end wrapper -->
             
@@ -405,7 +416,7 @@
                             <input type="text" placeholder="поиск по сайту" class="search__form_input search__mobile_input">
                             <button type="reset" class="search__mobile-form_reset"></button>
                         </div>
-                        <button class="search__form_btn search__form_btn-clear" onclick="showHideMobSearch()"></button>
+                        <button id="search__form_btn-close"  class="search__form_btn search__form_btn-clear"></button>
                     </div>
                 </form>
             </div>

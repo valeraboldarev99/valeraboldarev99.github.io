@@ -39,8 +39,8 @@ $(document).ready(function () {
 			{
 				breakpoint: 801,
 				settings: {
-		            slidesToShow:1,
-                    centerMode: true,
+		            slidesToShow:2,
+                    // centerMode: true,
 		            arrows:false,
                     dots:true,
 				}
@@ -56,35 +56,84 @@ $(document).ready(function () {
 			var self = this;
 			self.init = function()
 			{
-				self.events();
-			},
-			self.events = function()
-			{
-				$('#sidebar-open').click(function() {
-					self.openClose();
-				});
+                $('#sidebar-open').on('click', function() {
+                    self.openClose();
+                });
 			},
 			self.openClose = function()
 			{
-                if($('#sidebar-open').hasClass('header__mobile_hamburger')) //open
+                if($('#sidebar-open').hasClass('header__mobile_hamburger'))
                 {
-                    $('.sidebar').addClass('sidebar_opened');
-                    $('#sidebar-open').removeClass('header__mobile_hamburger');
-                    $('#sidebar-open').addClass('header__mobile_close');  
-                    $('body').css('overflow', 'hidden');              
+                    mobileSearch.close();
+                    self.open();
                 }
-                else {                                                      //close
-                    $('.sidebar').removeClass('sidebar_opened');
-                    $('#sidebar-open').removeClass('header__mobile_close');
-                    $('#sidebar-open').addClass('header__mobile_hamburger'); 
-                    $('body').css('overflow', '');
-                }                
-			}
+                else {
+                   self.close();
+                }
+			},
+            self.open = function()
+            {
+                $('.sidebar').addClass('sidebar_opened');
+                $('#sidebar-open').removeClass('header__mobile_hamburger');     //поменять значек hamburger
+                $('#sidebar-open').addClass('header__mobile_close');            //на значек close
+                $('body').css('overflow', 'hidden');                            //запрет прокрутки
+            },
+            self.close = function()
+            {
+                $('.sidebar').removeClass('sidebar_opened');
+                $('#sidebar-open').removeClass('header__mobile_close');         //поменять значек close
+                $('#sidebar-open').addClass('header__mobile_hamburger');        //на значек hamburger
+                $('body').css('overflow', '');                                  //разрешить прокрутку
+            }
 		}
 		return new obj();
 	}();
 	mobileSidebar.init();
     //end mob menu
+
+    // mob search
+	var mobileSearch = function()
+	{
+		function obj()
+		{
+			var self = this;
+			self.init = function()
+			{
+                $('#search__mobile_btn').on('click', function() {
+                    self.openClose();
+                });
+                $('#search__form_btn-close').on('click', function() {
+                    self.close();
+                });
+			},
+			self.openClose = function()
+			{
+                if($('.search__mobile').hasClass('search-opened'))
+                {
+                    self.close();
+                }
+                else {
+                    mobileSidebar.close();
+                    self.open();  
+                }
+			},
+            self.open = function()
+            {
+                $('.search-overlay').css('display', 'block');
+                $('.search__mobile').addClass('search-opened');
+                $('body').css('overflow', 'hidden');                    //запрет прокрутки  
+            },
+            self.close = function()
+            {
+                $('.search-overlay').css('display', 'none');
+                $('.search__mobile').removeClass('search-opened');
+                $('body').css('overflow', '');                          //разрешить прокрутку
+            }
+		}
+		return new obj();
+	}();
+	mobileSearch.init();
+    //end mob search
 
     /*sub mob menu*/
 	$(".sidebar__menu_item-set").on("click", function() {
@@ -136,27 +185,9 @@ function showHideSearch()
 {
     if($('#search__form').css('display') == 'none')
     {
-        $('.search__btn').css('display', 'none');
         $('.search__form').css('display', 'inline-block');
     }
     else {
-        $('.search__btn').css('display', 'inline-block');
         $('.search__form').css('display', 'none');
-    }
-}
-
-// mob search field 
-function showHideMobSearch()
-{
-    if($('.search__mobile').hasClass('search-opened'))        //close
-    {
-        $('.search-overlay').css('display', 'none');
-        $('.search__mobile').removeClass('search-opened');
-        $('body').css('overflow', '');
-    }
-    else {                                                          //open
-        $('.search-overlay').css('display', 'block');
-        $('.search__mobile').addClass('search-opened');
-        $('body').css('overflow', 'hidden');              
     }
 }

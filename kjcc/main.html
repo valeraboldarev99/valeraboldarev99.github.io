@@ -102,7 +102,7 @@
                         </div>
                     </div>
                     <div class="header__mobile">
-                        <div id="search__mobile_btn" class="header__mobile_btn search__mobile_btn" onclick="showHideMobSearch()"></div>
+                        <div id="search__mobile_btn" class="header__mobile_btn search__mobile_btn"></div>
                         <a href="#" class="header__mobile_btn header__mobile_phone"></a>
                         <div id="sidebar-open" class="header__mobile_btn header__mobile_hamburger"></div>
                     </div>
@@ -123,7 +123,8 @@
                             <div class="slide__info">
                                 <p class="slide__info_text">Кыргызско-Японская Торговая Палата</p>
                                 <h2 class="slide__info_title">Обмен знаниями и опытом о Кыргызстане и Японии</h2>
-                                <p class="slide__info_text">KJCC организует обеденные презентации, бизнес-семинары и мероприятия после работы по всему Кыргызстану, что даёт вам возможность встретиться с другими членами и получить актуальную информацию/</p>
+                                <p class="slide__info_text">KJCC организует обеденные презентации, бизнес-семинары и мероприятия после работы по всему Кыргызстану, что даёт вам возможность встретиться с другими членами и получить актуальную информацию</p>
+                                <div class="slide__info_filter"></div>
                             </div>
                             <div class="slide__bottom_border"></div>
                         </div>
@@ -139,8 +140,8 @@
                         <div class="wrapper">
                             <div class="slide__info">
                                 <p class="slide__info_text">Кыргызско-Японская Торговая Палата</p>
-                                <h2 class="slide__info_title">Заголовок 2го слайда</h2>
-                                <p class="slide__info_text">Описание 2го слайда/</p>
+                                <h2 class="slide__info_title">Обмен знаниями и опытом о Кыргызстане и Японии 2</h2>
+                                <p class="slide__info_text">KJCC организует обеденные презентации 2, бизнес-семинары и мероприятия после работы по всему Кыргызстану, что даёт вам возможность встретиться с другими членами и получить актуальную информацию</p>
                             </div>
                             <div class="slide__bottom_border"></div>
                         </div>
@@ -156,8 +157,8 @@
                         <div class="wrapper">
                             <div class="slide__info">
                                 <p class="slide__info_text">Кыргызско-Японская Торговая Палата</p>
-                                <h2 class="slide__info_title">Заголовок 3го слайда</h2>
-                                <p class="slide__info_text">Описание 3го слайда/</p>
+                                <h2 class="slide__info_title">Обмен знаниями и опытом о Кыргызстане и Японии 3</h2>
+                                <p class="slide__info_text">Описание 3го слайда</p>
                             </div>
                             <div class="slide__bottom_border"></div>
                         </div>
@@ -434,8 +435,8 @@
             </div>
             <!-- end digitals -->
 
-            <div class="wrapper">
-                <div class="news__block">
+            <div class="news__block">
+                <div class="wrapper">
                     <div class="main__block_top">
                         <h2 class="main__block_title">Новости и события</h2>
                         <a href="#" class="link__next">Узнать больше</a>
@@ -460,7 +461,7 @@
                             </div>
                             <a href="#" class="link__open"></a>
                         </div>
-
+    
                         <div class="news__item">
                             <div class="news__item_pic">
                                 <picture>
@@ -480,7 +481,7 @@
                             </div>
                             <a href="#" class="link__open"></a>
                         </div>
-
+    
                         <div class="news__item">
                             <div class="news__item_pic">
                                 <picture>
@@ -503,8 +504,10 @@
                     </div>
                     <a href="#" class="link__next link__next-mob">Узнать больше</a>
                 </div>
-                <!-- end news block  -->
+            </div>
+            <!-- end news block  -->
 
+            <div class="wrapper">
                 <div class="chamber-member__block">
                     <div class="main__block_top">
                         <h2 class="main__block_title">Партнеры палаты</h2>
@@ -773,7 +776,7 @@
                             <input type="text" placeholder="поиск по сайту" class="search__form_input search__mobile_input">
                             <button type="reset" class="search__mobile-form_reset"></button>
                         </div>
-                        <button class="search__form_btn search__form_btn-clear" onclick="showHideMobSearch()"></button>
+                        <button id="search__form_btn-close"  class="search__form_btn search__form_btn-clear"></button>
                     </div>
                 </form>
             </div>
