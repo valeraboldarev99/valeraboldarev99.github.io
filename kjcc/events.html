@@ -455,13 +455,16 @@
     <script>
         function openCloseCalendar()
         {
-            var calendar__block = $('#js-calendar__block');
-            if(calendar__block.css('display') == 'none')
+            if($( window ).width() <= 1299)
             {
-                calendar__block.css('display', 'block');
-            }
-            else {
-                calendar__block.css('display', 'none');
+                var calendar__block = $('#js-calendar__block');
+                if(calendar__block.css('display') == 'none')
+                {
+                    calendar__block.css('display', 'block');
+                }
+                else {
+                    calendar__block.css('display', 'none');
+                }
             }
         }
 
