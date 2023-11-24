@@ -2177,3 +2177,8 @@ body {
 .file__block_text {
     margin: 0;
 }
+
+.map__block {
+    height: 415px;
+    margin-bottom: 40px;
+}

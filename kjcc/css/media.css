@@ -717,6 +717,10 @@
     .file__block_title {
         font-size: 20px;
     }
+
+    .map__block {
+        height: 350px;
+    }
 }
 
 @media screen and (max-width:800px) {
