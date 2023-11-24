@@ -1745,13 +1745,14 @@ body {
 }
 
 .events__menu {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     width: 100%;
 }
 
 .events__menu_items {
     display: flex;
     justify-content: start;
+    flex-wrap: wrap;
 }
 
 .events__menu_item {
@@ -1764,6 +1765,7 @@ body {
     border-radius: 4px;
     margin-right: 10px;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .events__menu_item-active {
