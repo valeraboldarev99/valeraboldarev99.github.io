@@ -538,6 +538,10 @@
     .events__item_info {
         width: 460px;
     }
+
+    .news__list_items .events__item_info {
+        width: 460px;
+    }
     
     .events__item_title {
         font-size: 18px;
@@ -1368,6 +1372,7 @@
         margin-bottom: 20q;
     }
 
+    .news__list_items .events__item_info,
     .events__item_info {
         width: 100%;
     }

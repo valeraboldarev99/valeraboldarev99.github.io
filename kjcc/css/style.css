@@ -1770,6 +1770,10 @@ body {
     color: var(--text-active-color);
 }
 
+.events__items {
+    width: 100%;
+}
+
 .events__item {
     display: flex;
     justify-content: space-between;
@@ -1816,6 +1820,10 @@ body {
 
 .events__item_info {
     width: 490px;
+}
+
+.news__list_items .events__item_info {
+    width: 810px;
 }
 
 .events__item_title {
