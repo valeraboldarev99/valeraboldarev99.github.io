@@ -41,15 +41,4 @@ $(document).ready(function () {
 	}();
 	mobileSidebar.init();
     //end mob menu
-
-    // плавный скролл по якорям
-    $('.js-header_down').on("click", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href');
-        if(id && id != '#')
-        {
-            top = $(id).offset().top;
-            $('body,html').animate({scrollTop: top}, 1500);
-        }
-    });
 });

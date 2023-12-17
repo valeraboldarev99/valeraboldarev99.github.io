@@ -5,6 +5,14 @@ $color-text: #fff;
 $color-active: #DA2128;
 $color-border: rgba(255, 255, 255, 0.2);
 
+%full-width-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .clear {
 	clear: both;
 }
