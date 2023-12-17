@@ -1,0 +1,64 @@
+@media screen and (max-width:1299px) {
+    :root {
+        --wrapper-width: 768px;
+    }
+
+    h1 {
+        font-size: 35px;
+        line-height: 39px;
+        margin-bottom: 35px;
+    }
+
+    th,
+    td {
+        min-width: 235px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    :root {
+        --wrapper-width: 355px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 28px;
+        margin: 20px 0;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 23px;
+        margin: 20px 0;
+    }
+    
+    h4 {
+        font-size: 17px;
+        line-height: 24px;
+        margin: 18px 0;
+    }
+
+    h5 {
+        font-size: 16px;
+        line-height: 18px;
+        margin: 16px 0;
+    }
+
+    h6 {
+        font-size: 15px;
+        line-height: 18px;
+        margin: 15px 0;
+    }
+
+    
+}
