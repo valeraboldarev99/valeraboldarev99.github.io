@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.cards__block .cards__block_bg, .header__filter {
+.cards__block .cards__block_bg, .header__filter, .read__more {
   position: absolute;
   top: 0;
   left: 0;
@@ -44,7 +44,7 @@ p {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.4;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: #fff;
 }
 
@@ -68,7 +68,7 @@ h2 {
   font-size: 30px;
   font-weight: 500;
   line-height: 36px;
-  margin: 20px 0;
+  margin: 0 0 20px 0;
   color: var(--black-color);
 }
 
@@ -76,7 +76,7 @@ h3 {
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
-  margin: 24px 0;
+  margin: 0 0 24px 0;
   color: var(--black-color);
 }
 
@@ -84,7 +84,7 @@ h4 {
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
-  margin: 18px 0;
+  margin: 0 0 18px 0;
   color: var(--black-color);
 }
 
@@ -92,7 +92,7 @@ h5 {
   font-size: 17px;
   font-weight: 500;
   line-height: 21px;
-  margin: 17px 0;
+  margin: 0 0 17px 0;
   color: var(--black-color);
 }
 
@@ -100,7 +100,7 @@ h6 {
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
-  margin: 16px 0;
+  margin: 0 0 16px 0;
   color: var(--black-color);
 }
 
@@ -240,6 +240,19 @@ mark {
 
 small {
   font-size: 80%;
+}
+
+.booking__block .rooms__item, .booking__block .booking__addreses_header, .cards__block .cards__item {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 30px 2px rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+.booking__block .rooms__item:hover, .booking__block .booking__addreses_header:hover, .cards__block .cards__item:hover {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .active {
@@ -456,12 +469,6 @@ body {
   width: 23%;
   padding: 25px;
   text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-left: rgba(255, 255, 255, 0.2);
-  box-shadow: 5px 5px 30px 2px rgba(255, 255, 255, 0.2);
-  background-color: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(1px);
-  backdrop-filter: blur(1px);
 }
 .cards__block .cards__item_pic {
   margin: 0 auto 20px auto;
@@ -473,4 +480,74 @@ body {
 .cards__block .cards__item_text {
   font-weight: 500;
   font-size: 18px;
+}
+
+.about__block {
+  padding: 90px 0;
+}
+.about__block .about__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.about__block .about__item {
+  width: 46%;
+}
+.about__block .about__item_video {
+  text-align: center;
+}
+.about__block .about__item_video video {
+  width: 100%;
+}
+.about__block .about__item_content p {
+  font-size: 22px;
+}
+
+.booking__block {
+  background: url("../img/content/booking_bg.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 70px 0;
+}
+.booking__block .booking__header {
+  text-align: center;
+}
+.booking__block .booking__addresses_item {
+  margin-bottom: 40px;
+}
+.booking__block .booking__addreses_header {
+  padding: 15px 25px;
+  display: inline-block;
+}
+.booking__block .rooms__items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.booking__block .rooms__item {
+  width: 23%;
+  position: relative;
+  margin-right: 34px;
+  margin-bottom: 34px;
+  padding: 15px 25px;
+  text-align: center;
+}
+.booking__block .rooms__item:nth-child(4n) {
+  margin-right: 0;
+}
+.booking__block .rooms__item:hover .rooms__item_pic img {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+.booking__block .rooms__item_pic {
+  height: 140px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.booking__block .rooms__item_pic img {
+  width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s ease-in-out;
 }

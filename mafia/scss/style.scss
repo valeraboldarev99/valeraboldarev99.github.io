@@ -1,7 +1,25 @@
 @import "_reset.scss";
 
+%blur-block {
+    border-top: 1px solid $color-border;
+    border-left: $color-border;
+    box-shadow: 5px 5px 30px 2px $color-border;
+    background-color: $color-border;
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+
+    &:hover {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+}
+
 .active {
 	color: $color-active!important;
+}
+
+.read__more {
+    @extend %full-width-absolute;
 }
 
 html,
@@ -249,12 +267,8 @@ body {
         width: 23%;
         padding: 25px;
         text-align: center;
-        border-top: 1px solid $color-border;
-        border-left: $color-border;
-        box-shadow: 5px 5px 30px 2px $color-border;
-        background-color: $color-border;
-        -webkit-backdrop-filter: blur(1px);
-        backdrop-filter: blur(1px);
+
+        @extend %blur-block;
     }
     .cards__item_pic {
         margin: 0 auto 20px auto;
@@ -268,5 +282,100 @@ body {
         font-weight: 500;
         font-size: 18px;
     }
-    
+}
+
+.about__block {
+    padding: 90px 0;
+    .about__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .about__item {
+        width: 46%;
+    }
+
+    .about__item_video {
+        text-align: center;
+        video {
+            width: 100%;
+        }
+
+    }
+    .about__item_content {
+        p {
+            font-size: 22px;
+        }
+    }
+}
+
+.booking__block {
+    background: url('../img/content/booking_bg.jpg') center center no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+
+    .booking__header {
+        text-align: center;
+    }
+    .booking__addresses_item {
+        margin-bottom: 40px;
+    }
+
+    .booking__addreses_header {
+        padding: 15px 25px;
+        display: inline-block;
+        @extend %blur-block;
+    }
+
+    .rooms__items {
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+    .rooms__item {
+        width: 23%;
+        position: relative;
+        margin-right: 34px;
+        margin-bottom: 34px; 
+        padding: 15px 25px;
+        text-align: center;
+        @extend %blur-block;
+
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+
+        &:hover {
+            .rooms__item_pic {
+                img {
+                    transform: scale(1.1);
+                    -webkit-transition: all 0.5s ease-in-out;
+                    -moz-transition: all 0.5s ease-in-out;
+                    -ms-transition: all 0.5s ease-in-out;
+                    -o-transition: all 0.5s ease-in-out;
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+        }
+
+    }
+    .rooms__item_pic {
+        height: 140px;
+        overflow: hidden;
+        margin-bottom: 10px;
+        img {
+            width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+        }
+
+    }
+    .rooms__item_name {
+    }
 }
