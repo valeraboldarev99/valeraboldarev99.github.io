@@ -39,7 +39,7 @@
                                     </div>
                                 </div>
                                 <div class="header-btn">
-                                    <a href="#" class="btn">Забронировать</a>
+                                    <a href="#booking" class="btn">Забронировать</a>
                                 </div>
                             </div>
                         </div>
@@ -65,9 +65,6 @@
 		<main class="page__main">
             <section id="cards">
                 <div class="cards__block">
-                    <div class="cards__block_bg">
-                        <img src="img/content/cards_bg.png" alt="cards_bg">
-                    </div>
                     <div class="wrapper">
                         <div class="cards__items">
                             <div class="cards__item">
@@ -126,6 +123,7 @@
 
             <section id="booking">
                 <div class="booking__block">
+                    <div class="booking__block_filter"></div>
                     <div class="wrapper">
                         <h2 class="booking__header">Забронировать</h2>
                         <div class="booking__addresses">
@@ -136,7 +134,8 @@
                                         <div class="rooms__item_pic">
                                             <img src="img/content/room1.jpg" alt="room_1">
                                         </div>
-                                        <div class="rooms__item_name">Название 10 мест</div>
+                                        <div class="rooms__item_name">Название</div>
+                                        <div class="rooms__item_places">10 мест</div>
                                         <a href="#" class="read__more"></a>
                                     </div>
         
@@ -144,7 +143,8 @@
                                         <div class="rooms__item_pic">
                                             <img src="img/content/room3.jpg" alt="room_2">
                                         </div>
-                                        <div class="rooms__item_name">Название 12 мест</div>
+                                        <div class="rooms__item_name">Название</div>
+                                        <div class="rooms__item_places">12 мест</div>
                                         <a href="#" class="read__more"></a>
                                     </div>
 
@@ -152,7 +152,8 @@
                                         <div class="rooms__item_pic">
                                             <img src="img/content/room2.jpg" alt="room_1">
                                         </div>
-                                        <div class="rooms__item_name">Название 10 мест</div>
+                                        <div class="rooms__item_name">Название</div>
+                                        <div class="rooms__item_places">10 мест</div>
                                         <a href="#" class="read__more"></a>
                                     </div>
         
@@ -160,7 +161,8 @@
                                         <div class="rooms__item_pic">
                                             <img src="img/content/header_bg.jpg" alt="room_2">
                                         </div>
-                                        <div class="rooms__item_name">Название 12 мест</div>
+                                        <div class="rooms__item_name">Название</div>
+                                        <div class="rooms__item_places">12 мест</div>
                                         <a href="#" class="read__more"></a>
                                     </div>
 
@@ -168,7 +170,8 @@
                                         <div class="rooms__item_pic">
                                             <img src="img/content/room3.jpg" alt="room_2">
                                         </div>
-                                        <div class="rooms__item_name">Название 8 мест</div>
+                                        <div class="rooms__item_name">Название</div>
+                                        <div class="rooms__item_places">8 мест</div>
                                         <a href="#" class="read__more"></a>
                                     </div>
                                 </div>
@@ -180,7 +183,8 @@
                                         <div class="rooms__item_pic">
                                             <img src="img/content/room1.jpg" alt="room_1">
                                         </div>
-                                        <div class="rooms__item_name">Название 10 мест</div>
+                                        <div class="rooms__item_name">Длинное название в 2 строки</div>
+                                        <div class="rooms__item_places">10 мест</div>
                                         <a href="#" class="read__more"></a>
                                     </div>
         
@@ -188,7 +192,8 @@
                                         <div class="rooms__item_pic">
                                             <img src="img/content/room2.jpg" alt="room_2">
                                         </div>
-                                        <div class="rooms__item_name">Название 12 мест</div>
+                                        <div class="rooms__item_name">Название</div>
+                                        <div class="rooms__item_places">12 мест</div>
                                         <a href="#" class="read__more"></a>
                                     </div>
                                 </div>
@@ -198,52 +203,45 @@
                 </div>
             </section>
 		</main>
+
 		<div class="page__footer">
 			<footer class="footer">
-				<!-- <div class="wrapper">
-					<div class="footer__top">
-                        <a href="index.html" class="footer__logo"><img src="img/logo.png" alt="KJCC"></a>
-                        <div class="footer__menu_items">
-                            <div class="footer__item">
-                                <div class="footer__item_title">О палате</div>
-                                <a href="#" class="footer__item_sub">Деятельность</a>
-                                <a href="#" class="footer__item_sub">Комитеты палаты</a>
-                                <a href="#" class="footer__item_sub">Управление и персонал</a>
-                                <a href="#" class="footer__item_sub">Совет директоров</a>
+                <div class="wrapper">
+                    <div class="footer__top_content">
+                        <div class="footer__left">
+                            <a href="index.html" class="footer__logo">
+                                <img src="img/logo.png" alt="KJCC">
+                            </a>
+                        </div>
+                        <div class="footer__right">
+                            <div class="footer__menu">
+                                <div class="footer__menu_items">
+                                    <div class="footer__menu_item"><a href="#" class="footer__menu_link">О нас</a></div>
+                                    <div class="footer__menu_item"><a href="#" class="footer__menu_link">Правила игры</a></div>
+                                    <div class="footer__menu_item"><a href="#" class="footer__menu_link">Контакты</a></div>
+                                    <div class="footer__menu_item"><a href="#" class="footer__menu_link">Часто задаваемые вопросы</a></div>
+                                </div>
                             </div>
-                            <div class="footer__item">
-                                <div class="footer__item_title">Членство</div>
-                                <a href="#" class="footer__item_sub">Категории</a>
-                                <a href="#" class="footer__item_sub">Члены палаты</a>
-                                <a href="#" class="footer__item_sub">Преимущества</a>
-                                <a href="#" class="footer__item_sub">Заявка на вступление</a>
-                                <a href="#" class="footer__item_sub">Партнеры</a>
-                            </div>
-                            <div class="footer__item">
-                                <div class="footer__item_title">Медиа-центр</div>
-                                <a href="#" class="footer__item_sub">Медиа центр</a>
-                                <a href="#" class="footer__item_sub">События</a>
-                                <a href="#" class="footer__item_sub">Новости палаты</a>
-                                <a href="#" class="footer__item_sub">Новости членов палаты</a>
-                                <a href="#" class="footer__item_sub">Вестник палаты</a>
-                            </div>
-                            <div class="footer__item">
-                                <div class="footer__item_title">Контакты</div>
-                                <a href="#" class="footer__item_sub footer__item_adress">
-                                    720011, Кыргызстанг. Бишкек, ул. Юсупа Абдрахманова, 56, оф. 45
-                                </a>
+                            <div class="header__social footer__social">
+                                <div class="header__social_items">
+                                    <a href="#" class="header__social_item social_phone"></a>
+                                    <a href="#" class="header__social_item social_whatsapp"></a>
+                                    <a href="#" class="header__social_item social_telegram"></a>
+                                    <a href="#" class="header__social_item social_instagram"></a>
+                                    <a href="#" class="header__social_item social_youtube"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="footer__bottom">
                         <p class="footer__copy">
-                            © 2023, Kyrgyz-Japan Chamber of Commerce. Обмен знаниями и опытом о Кыргызстане и Японии
+                            © 2023, Мафия ролевая игра для взрослых и детей
                         </p>
                         <a href="#" class="footer__dev">
-                            Создание сайта — Weltkind
+                            Создание сайта
                         </a>
                     </div>
-				</div> -->
+                </div>
 			</footer>
 		</div>
 	</div>
