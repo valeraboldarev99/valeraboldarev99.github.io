@@ -230,17 +230,16 @@
             }
         
             .header__logo {
-                width: 100%;
-
-                img {
-                    width: 125px;
-                    margin: 0 auto;
-                    display: block;
-                }
+                width: 125px;
+                margin: 0 auto;
             }
 
             .header__right {
                 display: none;
+            }
+
+            .header__mob {
+                display: block;
             }
         }
     }
@@ -389,5 +388,84 @@
         }
     }
 
+    // mobmenu
+    .header__mobile_btn {
+        display: inline-block;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+        }
+
+        &.header__mobile_hamburger::after {
+            background: url('../img/burger_mob.svg') center center no-repeat;
+            background-size: 24px; 
+        }
+    }
     
+    .search-overlay {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        display: none;
+        min-height: 100%;
+        width: 100%;
+        background-color: $color-bg;
+    }
+    
+    .sidebar {
+        padding: 30px 0;
+	    min-height: 100%;
+
+        .sidebar__block_top {
+            margin-bottom: 20px;
+        }
+
+        .sidebar__logo {
+            width: 125px;
+        }
+
+        .sidebar__close {
+            width: 40px;
+            height: 40px;
+
+            &::after {
+                width: 40px;
+                height: 40px;
+                background: url('../img/burger_close_mob.svg') center center no-repeat;
+                background-size: 24px; 
+            }
+        }
+
+        .sidebar__menu_item {
+            padding: 16px 0;
+        }
+    
+        .sidebar__sub-menu_items {
+            margin-top: 10px;
+        }
+    
+        .sidebar__contacts {
+            margin-top: 0;
+            padding-top: 30px;
+            margin-bottom: 30px;
+        }
+    
+        .sidebar__contact_btn {
+            padding: 15px 25px;
+        }
+
+        .header__social_items {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    // end mobmenu
 }

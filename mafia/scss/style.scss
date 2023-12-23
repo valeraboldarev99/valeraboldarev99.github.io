@@ -93,6 +93,10 @@ body {
             justify-content: flex-end;
             align-items: center;
         }
+
+        .header__mob {
+            display: none;
+        }
     }
 
     .header__menu {
@@ -465,3 +469,123 @@ body {
         margin: 0;
     }
 }
+
+// mobmenu
+.search__mobile {
+    display: none;
+}
+
+.sidebar {
+    display: none;
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	overflow: scroll;
+	width: 100%;
+	height: 100%;
+	background-color: $color-bg;
+	color: $color-text;
+	padding: 25px 0 20px 0;
+
+    .sidebar__block_top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .sidebar__logo {
+        width: 180px;
+    }
+
+    .sidebar__close {
+        position: absolute;
+        display: inline-block;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            background: url('../img/burger_close_mob.svg') center center no-repeat;
+            background-size: 30px; 
+        }
+    }
+    
+    .sidebar__block {
+        position: relative;
+        height: 100%;
+    }
+    
+    .sidebar__menu_items {
+        width: 100%;
+        margin-bottom: 30px;
+        
+        .sidebar__menu_item {
+            padding: 16px 0;
+            border-bottom: 1px solid $color-text;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .sidebar__menu_link {
+                color: $color-text;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 28px;
+                margin: 0;
+                text-transform: uppercase;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+        
+        .sidebar__menu_set {
+            background: url('../img/menu_set.svg') center center no-repeat;
+            width: 9px;
+            height: 9px;
+            background-size: 9px;
+            transform: rotate(-90deg);
+        }
+    }
+    
+    .sidebar__sub-menu_items {
+        display: none;
+        width: 100%;
+        margin-top: 7px;
+        
+        .sidebar__sub-menu_item {
+            margin-bottom: 6px;
+            
+            .sidebar__sub-menu_link {
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 21px;
+                text-decoration: none;
+                color: $color-text;
+                margin: 0;
+            }
+        }
+    }
+    
+    .sidebar__contacts {
+        margin-top: 50px;
+    }
+}
+
+.sidebar_opened {
+    display: block;
+}
+
+
+
+
+// end mobmenu
