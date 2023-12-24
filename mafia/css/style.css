@@ -438,6 +438,12 @@ body {
   text-align: center;
   width: 60%;
 }
+.header__content_block .header__content_header {
+  font-size: 40px;
+}
+.header__content_block .header__content_text {
+  font-size: 25px;
+}
 
 .header__filter {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(33, 33, 33, 0.5));
@@ -506,10 +512,6 @@ body {
 .about__block .about__item_video video {
   width: 100%;
 }
-.about__block .about__item_content p {
-  font-size: 22px;
-}
-
 .booking__block {
   background: url("../img/content/booking_bg.jpg") center center no-repeat;
   background-size: cover;

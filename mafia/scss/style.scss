@@ -231,6 +231,13 @@ body {
     z-index: 20;
     text-align: center;
     width: 60%;
+
+    .header__content_header {
+        font-size: 40px;
+    }
+    .header__content_text {
+        font-size: 25px;
+    }
 }
 
 .header__filter {
@@ -308,7 +315,7 @@ body {
     }
     .about__item_content {
         p {
-            font-size: 22px;
+            // font-size: 15px;
         }
     }
 }
