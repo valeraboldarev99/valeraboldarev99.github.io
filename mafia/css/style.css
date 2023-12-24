@@ -43,7 +43,7 @@ p {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.4;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   color: #fff;
 }
 
@@ -105,26 +105,14 @@ h6 {
 
 ul,
 ol {
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 0;
-  list-style: none;
   color: #fff;
 }
 
 li {
-  padding: 8px 0 8px 25px;
-  list-style: none;
+  margin: 0 0 5px 30px;
   position: relative;
-}
-
-li::before {
-  color: red;
-  content: "•";
-  position: absolute;
-  left: 0;
-  top: 3px;
-  font-size: 20px;
-  padding-right: 10px;
 }
 
 table {
@@ -753,6 +741,15 @@ body {
   padding: 40px 0;
 }
 
+.booking__page_content {
+  margin-bottom: 50px;
+}
+
+.booking__page_info p {
+  color: #DA2128;
+  font-weight: 500;
+}
+
 .booking__table {
   margin: 30px 0;
 }
@@ -789,8 +786,131 @@ body {
   margin-bottom: 10px;
   cursor: pointer;
   background-color: #5cb85c;
+  box-shadow: 2px 3px 3px 0 rgba(60, 238, 176, 0.6);
+  transition: all 0.5s ease-in-out;
+}
+.booking__table .booking__days_items .booking__days_times .booking__days_item-time:hover {
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: none;
 }
 .booking__table .booking__days_items .booking__days_times .booking__days_item-time.ordered {
+  box-shadow: 2px 3px 3px 0 rgba(238, 60, 60, 0.6);
   background-color: rgba(255, 255, 255, 0.2);
   cursor: default;
+}
+
+.modal__container {
+  background-color: #1c1c1c;
+  padding: 30px 60px;
+  border-radius: 8px;
+}
+.modal__container .fancybox-close-small {
+  display: none;
+}
+.modal__container .modal__close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/burger_close_mob.svg") center center no-repeat;
+  background-size: 20px;
+  cursor: pointer;
+}
+.modal__container .modal__header {
+  text-align: center;
+}
+.modal__container .modal__room_name {
+  font-size: 20px;
+  text-align: center;
+}
+.modal__container .modal__info_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 20px 0;
+}
+.modal__container .modal__info_items .modal__info_item {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-right: 1px solid #fff;
+  text-align: center;
+  width: 33.3%;
+}
+.modal__container .modal__info_items .modal__info_item:first-child {
+  border-radius: 8px 0 0 8px;
+}
+.modal__container .modal__info_items .modal__info_item:last-child {
+  border-right: none;
+  border-radius: 0 8px 8px 0;
+}
+.modal__container .modal__info_items .modal__info_item .modal__info_item_header {
+  font-size: 14px;
+  color: #878787;
+}
+.modal__container .modal__info_items .modal__info_item .modal__info_item_text {
+  font-size: 17px;
+}
+.modal__container .form__fields {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 650px;
+}
+.modal__container .form__fields .form__field {
+  width: 48%;
+}
+.modal__container .form__field {
+  margin: 10px 0;
+  width: 100%;
+}
+.modal__container .form__field.form__field_btn {
+  text-align: center;
+}
+.modal__container .form__field.form__field_btn .btn {
+  height: 40px;
+  padding: 10px 15px;
+  display: inline-block;
+}
+.modal__container .form__field .modal__label {
+  display: block;
+  margin-bottom: 5px;
+}
+.modal__container .form__field .modal__select,
+.modal__container .form__field .modal__input {
+  width: 100%;
+  height: 40px;
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 10px 15px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+.modal__container .form__field .modal__select:-webkit-autofill, .modal__container .form__field .modal__select:-webkit-autofill:hover, .modal__container .form__field .modal__select:-webkit-autofill:focus, .modal__container .form__field .modal__select:-webkit-autofill:active,
+.modal__container .form__field .modal__input:-webkit-autofill,
+.modal__container .form__field .modal__input:-webkit-autofill:hover,
+.modal__container .form__field .modal__input:-webkit-autofill:focus,
+.modal__container .form__field .modal__input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff;
+}
+.modal__container .form__field .modal__select::-moz-placeholder, .modal__container .form__field .modal__input::-moz-placeholder {
+  color: #878787;
+}
+.modal__container .form__field .modal__select::placeholder,
+.modal__container .form__field .modal__input::placeholder {
+  color: #878787;
+}
+.modal__container .form__field .modal__select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding-right: 40px;
+  background: url(../img/dropdowm-arrow.svg) right center no-repeat;
+}
+.modal__container .form__field .modal__select option {
+  color: #1c1c1c;
 }
