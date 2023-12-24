@@ -291,17 +291,16 @@ body {
   background-size: cover;
 }
 
-.header {
+.header.header-with-bg {
   height: 100vh;
   background-size: cover;
   display: flex;
   flex-direction: column;
 }
-.header .header__top {
+.header.header-with-bg .header__top {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 100;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   -webkit-backdrop-filter: blur(2px);
@@ -748,4 +747,50 @@ body {
 
 .sidebar_opened {
   display: block;
+}
+
+.inner__page {
+  padding: 40px 0;
+}
+
+.booking__table {
+  margin: 30px 0;
+}
+.booking__table .booking__days_list {
+  max-width: 75%;
+}
+.booking__table .booking__days_items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+.booking__table .booking__days_items .booking__days_item {
+  padding: 7px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.booking__table .booking__days_items .booking__days_item p {
+  margin: 0;
+}
+.booking__table .booking__days_items .booking__days_item-day {
+  margin-right: 20px;
+  padding: 7px 12px;
+}
+.booking__table .booking__days_items .booking__days_times {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.booking__table .booking__days_items .booking__days_times .booking__days_item-time {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: #5cb85c;
+}
+.booking__table .booking__days_items .booking__days_times .booking__days_item-time.ordered {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: default;
 }
