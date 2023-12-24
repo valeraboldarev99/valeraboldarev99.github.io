@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mafia | Бронирование</title>
+<link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+<link rel="manifest" href="favicons/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<div class="page">
+		<div class="page__header">
+            <header class="header">
+                <div class="header__top">
+                    <div class="wrapper">
+                        <div class="header__top_content">
+                            <div class="header__left">
+                                <a href="index.html" class="header__logo">
+                                    <img src="img/logo.png" alt="KJCC">
+                                </a>
+                            </div>
+                            <div class="header__right">
+                                <div class="header__menu">
+                                    <div class="header__menu_items">
+                                        <div class="header__menu_item"><a href="#" class="header__menu_link">О нас</a></div>
+                                        <div class="header__menu_item"><a href="#" class="header__menu_link">Правила игры</a></div>
+                                        <div class="header__menu_item"><a href="#" class="header__menu_link">Контакты</a></div>
+                                    </div>
+                                </div>
+                                <div class="header__social">
+                                    <div class="header__social_items">
+                                        <a href="#" class="header__social_item social_phone"></a>
+                                        <a href="#" class="header__social_item social_whatsapp"></a>
+                                        <a href="#" class="header__social_item social_telegram"></a>
+                                        <a href="#" class="header__social_item social_instagram"></a>
+                                        <a href="#" class="header__social_item social_youtube"></a>
+                                    </div>
+                                </div>
+                                <div class="header-btn">
+                                    <a href="#booking" class="btn">Забронировать</a>
+                                </div>
+                            </div>
+                            <div class="header__mob">
+                                <div id="js-sidebar-open" class="header__mobile_btn header__mobile_hamburger"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+		</div>
+		<main class="page__main inner__page">
+            <section id="booking__inner">
+                <div class="booking__page">
+                    <div class="wrapper">
+                        <h1>Комната "Зал Подозрений"</h1>
+                        <p><strong>Адрес:</strong> Тюмень, ул.Гагарина 103</p>
+                        <p><strong>Количество мест:</strong> 10</p>
+                        <div class="booking__page_content">
+                            <p>Добро пожаловать в "Зал Подозрений" - место, где каждая секунда имеет значение и каждое решение влияет на исход игры!</p>
+                            <br>
+                            <p>Описание:</p>
+                            <p>Эта комната предназначена для 10 участников, где заботливо созданная атмосфера интриг и скрытых намёков погрузит вас в захватывающий мир Мафии.</p>
+                            <br>
+                            <p>Особенности:</p>
+                            <ul>
+                                <li>Световое шоу: Наша комната залита динамичным световым шоу, подчеркивающим напряженную атмосферу игры.</li>
+                                <li>Уникальный интерьер: Дизайн интерьера в стиле древнего дворца с секретами и скрытыми уголками добавляет остроты в игровой процесс.</li>
+                                <li>Звуковое оформление: Звуковое оформление создает атмосферу загадки и непредсказуемости, что поддерживает интригу на протяжении всей игры.</li>
+                                <li>Индивидуальные столы: Каждый стол оборудован всем необходимым для игры в Мафию, обеспечивая комфорт и удобство для каждого игрока.</li>
+                            </ul>
+                            <br>
+                            <p>Преимущества:</p>
+                            <ul>
+                                <li>Эксклюзивность: У нас есть уникальные правила и вариации игры, делающие каждую партию неповторимой.</li>
+                                <li>Профессиональные ведущие: Наши профессиональные организаторы и ведущие игр подарят вам незабываемые впечатления от каждой партии.</li>
+                                <li>Комфорт и удобство: Мы заботимся о вашем комфорте, предоставляя комнату с прекрасным обслуживанием и удобствами.</li>
+                                <li>Присоединяйтесь к нам в "Дворце Скорости" для увлекательной игры в Мафию, где каждый ход становится ключом к разгадке загадочных событий!</li>
+                            </ul>
+                        </div>
+                        <div class="booking__page_info">
+                            <p>
+                                Минимально возможное количество игроков: 8.
+                            </p>
+                            <p>
+                                Предоплата при бронировании 1000 рублей, остальная часть оплачивается на кассе перед игрой.
+                            </p>
+                        </div>
+
+                        <div class="booking__table">
+                            <div class="booking__days_list">
+
+                                <div class="booking__days_items">
+                                    <span class="booking__days_item booking__days_item-day">
+                                        <p>24.12</p>
+                                        <p>ВС</p>
+                                    </span>
+                                    <div class="booking__days_times">
+                                        <span class="booking__days_item booking__days_item-time ordered">09:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">09:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">10:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">10:30</span>
+                                        <a href="#" data-fancybox data-type="ajax" data-src="/modal-booking.html" data-selector="#modal-booking" class="booking__days_item booking__days_item-time">11:00</a>
+                                        <a href="#" data-fancybox data-type="ajax" data-src="/modal-booking.html" data-selector="#modal-booking" class="booking__days_item booking__days_item-time">11:30</a>
+                                        <a href="#" data-fancybox data-type="ajax" data-src="/modal-booking.html" data-selector="#modal-booking" class="booking__days_item booking__days_item-time">12:00</a>
+                                        <a href="#" data-fancybox data-type="ajax" data-src="/modal-booking.html" data-selector="#modal-booking" class="booking__days_item booking__days_item-time">12:30</a>
+                                        <a href="#" data-fancybox data-type="ajax" data-src="/modal-booking.html" data-selector="#modal-booking" class="booking__days_item booking__days_item-time">13:00</a>
+                                        <a href="#" data-fancybox data-type="ajax" data-src="/modal-booking.html" data-selector="#modal-booking" class="booking__days_item booking__days_item-time">13:30</a>
+                                        <a href="#" data-fancybox data-type="ajax" data-src="/modal-booking.html" data-selector="#modal-booking" class="booking__days_item booking__days_item-time">14:00</a>
+                                        <a href="#" data-fancybox data-type="ajax" data-src="/modal-booking.html" data-selector="#modal-booking" class="booking__days_item booking__days_item-time">14:30</a>
+                                        <span class="booking__days_item booking__days_item-time ordered">15:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">15:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">16:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">16:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">17:00</span>
+                                        <a href="#" data-fancybox data-type="ajax" data-src="/modal-booking.html" data-selector="#modal-booking" class="booking__days_item booking__days_item-time">17:30</a>
+                                        <a href="#" data-fancybox data-type="ajax" data-src="/modal-booking.html" data-selector="#modal-booking" class="booking__days_item booking__days_item-time">18:00</a>
+                                        <a href="#" data-fancybox data-type="ajax" data-src="/modal-booking.html" data-selector="#modal-booking" class="booking__days_item booking__days_item-time">18:30</a>
+                                        <a href="#" data-fancybox data-type="ajax" data-src="/modal-booking.html" data-selector="#modal-booking" class="booking__days_item booking__days_item-time">19:00</a>
+                                        <a href="#" data-fancybox data-type="ajax" data-src="/modal-booking.html" data-selector="#modal-booking" class="booking__days_item booking__days_item-time">19:30</a>
+                                        <a href="#" data-fancybox data-type="ajax" data-src="/modal-booking.html" data-selector="#modal-booking" class="booking__days_item booking__days_item-time">20:00</a>
+                                        <a href="#" data-fancybox data-type="ajax" data-src="/modal-booking.html" data-selector="#modal-booking" class="booking__days_item booking__days_item-time">20:30</a>
+                                        <a href="#" data-fancybox data-type="ajax" data-src="/modal-booking.html" data-selector="#modal-booking" class="booking__days_item booking__days_item-time">21:00</a>
+                                        <a href="#" data-fancybox data-type="ajax" data-src="/modal-booking.html" data-selector="#modal-booking" class="booking__days_item booking__days_item-time">21:30</a>
+                                        <a href="#" data-fancybox data-type="ajax" data-src="/modal-booking.html" data-selector="#modal-booking" class="booking__days_item booking__days_item-time">22:00</a>
+                                    </div>
+                                </div>
+                                <!-- end booking__days_items -->
+
+                                <div class="booking__days_items">
+                                    <span class="booking__days_item booking__days_item-day">
+                                        <p>25.12</p>
+                                        <p>ПН</p>
+                                    </span>
+                                    <div class="booking__days_times">
+                                        <span class="booking__days_item booking__days_item-time">09:00</span>
+                                        <span class="booking__days_item booking__days_item-time">09:30</span>
+                                        <span class="booking__days_item booking__days_item-time">10:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">10:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">11:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">11:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">12:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">12:30</span>
+                                        <span class="booking__days_item booking__days_item-time">13:00</span>
+                                        <span class="booking__days_item booking__days_item-time">13:30</span>
+                                        <span class="booking__days_item booking__days_item-time">14:00</span>
+                                        <span class="booking__days_item booking__days_item-time">14:30</span>
+                                        <span class="booking__days_item booking__days_item-time">15:00</span>
+                                        <span class="booking__days_item booking__days_item-time">15:30</span>
+                                        <span class="booking__days_item booking__days_item-time">16:00</span>
+                                        <span class="booking__days_item booking__days_item-time">16:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">17:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">17:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">18:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">18:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">19:00</span>
+                                        <span class="booking__days_item booking__days_item-time">19:30</span>
+                                        <span class="booking__days_item booking__days_item-time">20:00</span>
+                                        <span class="booking__days_item booking__days_item-time">20:30</span>
+                                        <span class="booking__days_item booking__days_item-time">21:00</span>
+                                        <span class="booking__days_item booking__days_item-time">21:30</span>
+                                        <span class="booking__days_item booking__days_item-time">22:00</span>
+                                    </div>
+                                </div>
+                                <!-- end booking__days_items -->
+
+                                <div class="booking__days_items">
+                                    <span class="booking__days_item booking__days_item-day">
+                                        <p>26.12</p>
+                                        <p>ВТ</p>
+                                    </span>
+                                    <div class="booking__days_times">
+                                        <span class="booking__days_item booking__days_item-time">09:00</span>
+                                        <span class="booking__days_item booking__days_item-time">09:30</span>
+                                        <span class="booking__days_item booking__days_item-time">10:00</span>
+                                        <span class="booking__days_item booking__days_item-time">10:30</span>
+                                        <span class="booking__days_item booking__days_item-time">11:00</span>
+                                        <span class="booking__days_item booking__days_item-time">11:30</span>
+                                        <span class="booking__days_item booking__days_item-time">12:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">12:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">13:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">13:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">14:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">14:30</span>
+                                        <span class="booking__days_item booking__days_item-time">15:00</span>
+                                        <span class="booking__days_item booking__days_item-time">15:30</span>
+                                        <span class="booking__days_item booking__days_item-time">16:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">16:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">17:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">17:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">18:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">18:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">19:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">19:30</span>
+                                        <span class="booking__days_item booking__days_item-time">20:00</span>
+                                        <span class="booking__days_item booking__days_item-time">20:30</span>
+                                        <span class="booking__days_item booking__days_item-time">21:00</span>
+                                        <span class="booking__days_item booking__days_item-time">21:30</span>
+                                        <span class="booking__days_item booking__days_item-time">22:00</span>
+                                    </div>
+                                </div>
+                                <!-- end booking__days_items -->
+
+                                <div class="booking__days_items">
+                                    <span class="booking__days_item booking__days_item-day">
+                                        <p>27.12</p>
+                                        <p>СР</p>
+                                    </span>
+                                    <div class="booking__days_times">
+                                        <span class="booking__days_item booking__days_item-time">09:00</span>
+                                        <span class="booking__days_item booking__days_item-time">09:30</span>
+                                        <span class="booking__days_item booking__days_item-time">10:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">10:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">11:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">11:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">12:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">12:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">13:00</span>
+                                        <span class="booking__days_item booking__days_item-time">13:30</span>
+                                        <span class="booking__days_item booking__days_item-time">14:00</span>
+                                        <span class="booking__days_item booking__days_item-time">14:30</span>
+                                        <span class="booking__days_item booking__days_item-time">15:00</span>
+                                        <span class="booking__days_item booking__days_item-time">15:30</span>
+                                        <span class="booking__days_item booking__days_item-time">16:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">16:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">17:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">17:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">18:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">18:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">19:00</span>
+                                        <span class="booking__days_item booking__days_item-time">19:30</span>
+                                        <span class="booking__days_item booking__days_item-time">20:00</span>
+                                        <span class="booking__days_item booking__days_item-time">20:30</span>
+                                        <span class="booking__days_item booking__days_item-time">21:00</span>
+                                        <span class="booking__days_item booking__days_item-time">21:30</span>
+                                        <span class="booking__days_item booking__days_item-time">22:00</span>
+                                    </div>
+                                </div>
+                                <!-- end booking__days_items -->
+
+                                <div class="booking__days_items">
+                                    <span class="booking__days_item booking__days_item-day">
+                                        <p>28.12</p>
+                                        <p>ЧТ</p>
+                                    </span>
+                                    <div class="booking__days_times">
+                                        <span class="booking__days_item booking__days_item-time ordered">09:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">09:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">10:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">10:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">11:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">11:30</span>
+                                        <span class="booking__days_item booking__days_item-time">12:00</span>
+                                        <span class="booking__days_item booking__days_item-time">12:30</span>
+                                        <span class="booking__days_item booking__days_item-time">13:00</span>
+                                        <span class="booking__days_item booking__days_item-time">13:30</span>
+                                        <span class="booking__days_item booking__days_item-time">14:00</span>
+                                        <span class="booking__days_item booking__days_item-time">14:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">15:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">15:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">16:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">16:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">17:00</span>
+                                        <span class="booking__days_item booking__days_item-time">17:30</span>
+                                        <span class="booking__days_item booking__days_item-time">18:00</span>
+                                        <span class="booking__days_item booking__days_item-time">18:30</span>
+                                        <span class="booking__days_item booking__days_item-time">19:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">19:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">20:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">20:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">21:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">21:30</span>
+                                        <span class="booking__days_item booking__days_item-time">22:00</span>
+                                    </div>
+                                </div>
+                                <!-- end booking__days_items -->
+
+                                <div class="booking__days_items">
+                                    <span class="booking__days_item booking__days_item-day">
+                                        <p>29.12</p>
+                                        <p>ПТ</p>
+                                    </span>
+                                    <div class="booking__days_times">
+                                        <span class="booking__days_item booking__days_item-time">09:00</span>
+                                        <span class="booking__days_item booking__days_item-time">09:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">10:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">10:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">11:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">11:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">12:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">12:30</span>
+                                        <span class="booking__days_item booking__days_item-time">13:00</span>
+                                        <span class="booking__days_item booking__days_item-time">13:30</span>
+                                        <span class="booking__days_item booking__days_item-time">14:00</span>
+                                        <span class="booking__days_item booking__days_item-time">14:30</span>
+                                        <span class="booking__days_item booking__days_item-time">15:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">15:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">16:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">16:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">17:00</span>
+                                        <span class="booking__days_item booking__days_item-time">17:30</span>
+                                        <span class="booking__days_item booking__days_item-time">18:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">18:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">19:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">19:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">20:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">20:30</span>
+                                        <span class="booking__days_item booking__days_item-time">21:00</span>
+                                        <span class="booking__days_item booking__days_item-time">21:30</span>
+                                        <span class="booking__days_item booking__days_item-time">22:00</span>
+                                    </div>
+                                </div>
+                                <!-- end booking__days_items -->
+
+                                <div class="booking__days_items">
+                                    <span class="booking__days_item booking__days_item-day">
+                                        <p>30.12</p>
+                                        <p>СБ</p>
+                                    </span>
+                                    <div class="booking__days_times">
+                                        <span class="booking__days_item booking__days_item-time">09:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">09:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">10:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">10:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">11:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">11:30</span>
+                                        <span class="booking__days_item booking__days_item-time">12:00</span>
+                                        <span class="booking__days_item booking__days_item-time">12:30</span>
+                                        <span class="booking__days_item booking__days_item-time">13:00</span>
+                                        <span class="booking__days_item booking__days_item-time">13:30</span>
+                                        <span class="booking__days_item booking__days_item-time">14:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">14:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">15:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">15:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">16:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">16:30</span>
+                                        <span class="booking__days_item booking__days_item-time">17:00</span>
+                                        <span class="booking__days_item booking__days_item-time">17:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">18:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">18:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">19:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">19:30</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">20:00</span>
+                                        <span class="booking__days_item booking__days_item-time ordered">20:30</span>
+                                        <span class="booking__days_item booking__days_item-time">21:00</span>
+                                        <span class="booking__days_item booking__days_item-time">21:30</span>
+                                        <span class="booking__days_item booking__days_item-time">22:00</span>
+                                    </div>
+                                </div>
+                                <!-- end booking__days_items -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+		</main>
+
+		<div class="page__footer">
+			<footer class="footer">
+                <div class="wrapper">
+                    <div class="footer__top_content">
+                        <div class="footer__left">
+                            <a href="index.html" class="footer__logo">
+                                <img src="img/logo.png" alt="KJCC">
+                            </a>
+                        </div>
+                        <div class="footer__right">
+                            <div class="footer__menu">
+                                <div class="footer__menu_items">
+                                    <div class="footer__menu_item"><a href="#" class="footer__menu_link">О нас</a></div>
+                                    <div class="footer__menu_item"><a href="#" class="footer__menu_link">Правила игры</a></div>
+                                    <div class="footer__menu_item"><a href="#" class="footer__menu_link">Контакты</a></div>
+                                    <div class="footer__menu_item"><a href="#" class="footer__menu_link">Часто задаваемые вопросы</a></div>
+                                </div>
+                            </div>
+                            <div class="header__social footer__social">
+                                <div class="header__social_items">
+                                    <a href="#" class="header__social_item social_phone"></a>
+                                    <a href="#" class="header__social_item social_whatsapp"></a>
+                                    <a href="#" class="header__social_item social_telegram"></a>
+                                    <a href="#" class="header__social_item social_instagram"></a>
+                                    <a href="#" class="header__social_item social_youtube"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <p class="footer__copy">
+                            © 2023, Мафия ролевая игра для взрослых и детей
+                        </p>
+                        <a href="#" class="footer__dev">
+                            Создание сайта
+                        </a>
+                    </div>
+                </div>
+			</footer>
+		</div>
+	</div>
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="sidebar__block">
+            <div class="wrapper">
+                <div class="sidebar__block_top">
+                    <a href="index.html" class="sidebar__logo">
+                        <img src="img/logo.png" alt="mafia">
+                    </a>
+                    <a href="#" class="sidebar__close" id="js-sidebar-close"></a>
+                </div>
+                <div class="sidebar__menu_items">
+                    <div class="sidebar__menu_item">
+                        <a href="#" class="sidebar__menu_link">О нас</a>
+                    </div>
+                    <div class="sidebar__menu_item">
+                        <a href="#" class="sidebar__menu_link">Правила игры</a>
+                    </div>
+                    <div class="sidebar__menu_item sidebar__menu_item-set">
+                        <p class="sidebar__menu_link">Часто задаваемые вопросы</p>
+                        <span class="sidebar__menu_set"></span>
+                        <div class="sidebar__sub-menu_items">
+                            <div class="sidebar__sub-menu_item">
+                                <a href="#" class="sidebar__sub-menu_link">Вопрос 1</a>
+                            </div>
+                            <div class="sidebar__sub-menu_item">
+                                <a href="#" class="sidebar__sub-menu_link">Вопрос 2</a>
+                            </div>
+                            <div class="sidebar__sub-menu_item">
+                                <a href="#" class="sidebar__sub-menu_link">Вопрос 3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar__menu_item">
+                        <a href="#" class="sidebar__menu_link">контакты</a>
+                    </div>
+                </div>
+                <!-- end sidebar menu  -->
+
+                <div class="sidebar__contacts header__social footer__social">
+                    <div class="header__social_items">
+                        <a href="#" class="header__social_item social_phone"></a>
+                        <a href="#" class="header__social_item social_whatsapp"></a>
+                        <a href="#" class="header__social_item social_telegram"></a>
+                        <a href="#" class="header__social_item social_instagram"></a>
+                        <a href="#" class="header__social_item social_youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/core.js"></script>
+</body>
+</html>
