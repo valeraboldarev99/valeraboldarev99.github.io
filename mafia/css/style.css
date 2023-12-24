@@ -499,6 +499,7 @@ body {
 .about__block .about__item_video video {
   width: 100%;
 }
+
 .booking__block {
   background: url("../img/content/booking_bg.jpg") center center no-repeat;
   background-size: cover;

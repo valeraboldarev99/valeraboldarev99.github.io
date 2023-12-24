@@ -368,6 +368,9 @@ small {
   .footer__menu_link {
     font-size: 12px;
   }
+  .footer__bottom p, .footer__bottom a {
+    margin: 0;
+  }
   .booking__table .booking__days_list {
     max-width: 100%;
   }
