@@ -378,6 +378,15 @@ small {
     margin-right: 15px;
     padding: 7px 10px;
   }
+  .booking__table .booking__days_items .booking__days_times {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  .booking__table .booking__days_items .booking__days_times .booking__days_item-time:nth-child(11n) {
+    margin-right: 0;
+  }
   .modal__container {
     padding: 20px 40px;
     width: 90%;
@@ -632,7 +641,48 @@ small {
     width: 80%;
     margin: 0 auto;
   }
+  .inner__page {
+    padding: 40px 0;
+  }
+  .booking__page_content {
+    margin-bottom: 50px;
+  }
+  .booking__page_info p {
+    color: #DA2128;
+    font-weight: 500;
+  }
+  .booking__table {
+    margin: 30px 0;
+  }
+  .booking__table .booking__days_list {
+    max-width: 100%;
+  }
+  .booking__table .booking__days_items {
+    flex-wrap: wrap;
+  }
+  .booking__table .booking__days_items .booking__days_item {
+    width: 100%;
+    margin-bottom: 7px;
+    padding: 7px;
+  }
+  .booking__table .booking__days_items .booking__days_item-day {
+    margin-right: 0;
+    padding: 10px 12px;
+  }
+  .booking__table .booking__days_items .booking__days_item-day p {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .booking__table .booking__days_items .booking__days_times {
+    justify-content: space-around;
+  }
+  .booking__table .booking__days_items .booking__days_times .booking__days_item-time {
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
   .modal__container {
+    padding: 20px 20px;
     width: 95%;
   }
   .modal__container .modal__close {
