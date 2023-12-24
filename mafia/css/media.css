@@ -632,4 +632,47 @@ small {
     width: 80%;
     margin: 0 auto;
   }
+  .modal__container {
+    width: 95%;
+  }
+  .modal__container .modal__close {
+    right: 10px;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    background-size: 20px;
+  }
+  .modal__container .modal__header {
+    font-size: 20px;
+  }
+  .modal__container .modal__room_name {
+    font-size: 16px;
+  }
+  .modal__container .modal__info_items {
+    margin: 20px 0;
+  }
+  .modal__container .modal__info_items .modal__info_item {
+    padding: 7px;
+  }
+  .modal__container .modal__info_items .modal__info_item .modal__info_item_header {
+    font-size: 11px;
+    color: #878787;
+  }
+  .modal__container .modal__info_items .modal__info_item .modal__info_item_text {
+    font-size: 13px;
+  }
+  .modal__container .form__fields .form__field {
+    width: 100%;
+  }
+  .modal__container .form__field {
+    margin: 10px 0;
+    width: 100%;
+  }
+  .modal__container .form__field .modal__label {
+    margin-bottom: 5px;
+  }
+  .modal__container .form__field.form__field_btn .btn {
+    margin: 20px 0;
+    width: 100%;
+  }
 }
