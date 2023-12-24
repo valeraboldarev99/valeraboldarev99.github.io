@@ -406,6 +406,9 @@ small {
   .modal__container .form__fields .form__field {
     width: 47%;
   }
+  .contacts__block .contacts__social {
+    width: 30%;
+  }
 }
 @media screen and (max-width: 780px) {
   p {
@@ -727,5 +730,8 @@ small {
   .modal__container .form__field.form__field_btn .btn {
     margin: 20px 0;
     width: 100%;
+  }
+  .contacts__block .contacts__social {
+    width: 80%;
   }
 }

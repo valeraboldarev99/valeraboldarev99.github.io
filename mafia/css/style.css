@@ -915,3 +915,12 @@ body {
 .modal__container .form__field .modal__select option {
   color: #1c1c1c;
 }
+
+.contacts__block {
+  margin: 40px 0 0 0;
+  text-align: center;
+}
+.contacts__block .contacts__social {
+  width: 30%;
+  margin: 20px auto;
+}
