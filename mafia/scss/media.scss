@@ -178,7 +178,48 @@
         p, a {
 
         }
-    }   
+    }
+
+    // inner pages    
+    
+    .booking__table {
+        .booking__days_list {
+            max-width: 100%;
+        }
+        .booking__days_items {
+            margin-bottom: 15px;
+    
+            .booking__days_item-day {
+                margin-right: 15px;
+                padding: 7px 10px;
+            }
+        }
+    }
+    
+    .modal__container {
+        padding: 20px 40px;
+        width: 90%;
+    
+        .modal__info_items {
+            .modal__info_item {
+                padding: 10px;
+        
+                .modal__info_item_header {
+                    font-size: 13px;
+                }
+    
+                .modal__info_item_text {
+                    font-size: 15px;
+                }
+            }
+        }
+    
+        .form__fields {
+            .form__field {
+                width: 47%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:780px) {

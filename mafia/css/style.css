@@ -805,6 +805,7 @@ body {
   background-color: #1c1c1c;
   padding: 30px 60px;
   border-radius: 8px;
+  width: 60%;
 }
 .modal__container .fancybox-close-small {
   display: none;
@@ -857,7 +858,6 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 650px;
 }
 .modal__container .form__fields .form__field {
   width: 48%;

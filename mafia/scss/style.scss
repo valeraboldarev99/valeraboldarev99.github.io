@@ -682,6 +682,7 @@ body {
     background-color: $color-bg;
     padding: 30px 60px;
     border-radius: 8px;
+    width: 60%;
 
     .fancybox-close-small {
         display: none;
@@ -742,7 +743,6 @@ body {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        width: 650px;
 
         .form__field {
             width: 48%;
