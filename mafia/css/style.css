@@ -532,30 +532,26 @@ body {
 }
 .booking__block .rooms__items {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
   z-index: 3;
   position: relative;
 }
 .booking__block .rooms__item {
-  width: 23%;
+  width: 48%;
   border-radius: 8px;
   position: relative;
-  margin-right: 34px;
   margin-bottom: 34px;
   padding: 15px 25px;
   text-align: center;
-}
-.booking__block .rooms__item:nth-child(4n) {
-  margin-right: 0;
 }
 .booking__block .rooms__item:hover .rooms__item_pic img {
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;
 }
 .booking__block .rooms__item_pic {
-  height: 140px;
+  height: 330px;
   overflow: hidden;
   margin-bottom: 10px;
   border-radius: 8px;
