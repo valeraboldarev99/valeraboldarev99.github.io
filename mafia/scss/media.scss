@@ -76,17 +76,20 @@
         }
 
         .cards__item {
-            width: 35%;
+            width: 150px;
+            height: 150px;
             padding: 15px;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
         .cards__item_pic {
+            margin: 0 auto 5px auto;
+
             img {
-                height: 40px;
+                height: 35px;
             }
         }
         .cards__item_text {
-            font-size: 16px;
+            font-size: 14px;
         }
     }
     .about__block {
@@ -122,21 +125,12 @@
         }
     
         .rooms__item {
-            width: 31%;
-            margin-right: 25px;
+            width: 48%;
             margin-bottom: 25px; 
             padding: 15px 25px;
-    
-            &:nth-child(4n) {
-                margin-right: 25px;
-            }
-
-            &:nth-child(3n) {
-                margin-right: 0;
-            }
         }
         .rooms__item_pic {
-            height: 120px;
+            height: 190px;
         }
         .rooms__item_name {
             font-size: 14px;
@@ -239,6 +233,14 @@
             width: 30%;
         }
     }
+
+    .rules__block {
+        margin: 30px 0;
+    
+        .rules__block_pic {
+            width: 45%;
+        }
+    }
 }
 
 @media screen and (max-width:780px) {
@@ -332,11 +334,11 @@
         clip-path: polygon(0% 0%, 50% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 95%);
 
         .cards__item {
-            width: 70%;
             padding: 15px;
+            margin-bottom: 20px;
         }
         .cards__item_pic {
-            margin: 0 auto 20px auto;
+            margin: 0 auto 5px auto;
 
             img {
                 height: 40px;
@@ -652,6 +654,14 @@
 
     .contacts__block {
         .contacts__social {
+            width: 80%;
+        }
+    }
+
+    .rules__block {
+        margin: 30px 0;
+    
+        .rules__block_pic {
             width: 80%;
         }
     }
