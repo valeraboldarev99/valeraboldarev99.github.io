@@ -263,12 +263,10 @@
             //     // alert(disabledDays.indexOf(date.getDay()));
             //     // alert(formattedDate);
             // },
-            onFocus: ({date, datepicker}) => {
-                datepicker.$datepicker.classList.remove('-disabled-')
-            },
             // генирация страницы календаря
             onRenderCell({date, cellType}) {
                 if (cellType === 'day') {
+                    //блокировка некоторых дней
                     if(date.getFullYear() == 2024) {
                         if(date.getMonth() == 0) {
                             if(date.getDate() == 4 ||
@@ -284,6 +282,7 @@
                         }
                     }
 
+                    //блокировка дней неделей
                     if(disabledDays.includes(date.getDay())) {
                         return {
                             disabled: true,
