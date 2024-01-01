@@ -275,12 +275,28 @@ body {
         align-items: stretch;
     }
     .cards__item {
-        width: 23%;
-        padding: 25px;
+        position: relative;
         text-align: center;
-        border-radius: 8px;
+        width: 230px;
+        height: 230px;
+        padding: 25px;
 
-        @extend %blur-block;
+        border-radius: 50%;
+        background-color: $color-black;
+        box-shadow: 
+          0 0 2px $color-text,
+          0 0 3px $color-text,
+          0 0 5px $color-active,
+          0 0 12px $color-active,
+          0 0 15px $color-active,
+          inset 0 0 20px $color-active;
+    }
+    .cards__item_content {
+        position: absolute;
+        width: 75%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .cards__item_pic {
         margin: 0 auto 20px auto;
@@ -806,4 +822,14 @@ body {
 .booking__calendar {
     text-align: center;
     margin: 40px 0;
+}
+
+.rules__block {
+    text-align: center;
+    margin: 40px 0;
+
+    .rules__block_pic {
+        display: inline-block;
+        width: 30%;
+    }
 }
