@@ -1,0 +1,72 @@
+.air-datepicker.-inline- {
+    border: none;
+    background-color: #f8f8f8;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    border-radius: 8px;
+    padding: 25px 20px;
+    display: inline-block;
+}
+
+.-weekend- {
+    color: #DA2128;
+}
+
+.air-datepicker-cell.-current-.-focus-,
+.air-datepicker-cell.-current- {
+    border-radius: 50%;
+    background-color: #DA2128;
+    color: #fff;
+}
+
+.air-datepicker-body--day-name {
+    font-family: 'Inter';
+    font-size: 13px;
+    font-weight: 400;
+    color: #8d8d8d;
+    text-transform: none;
+}
+
+.air-datepicker-nav--title,
+.air-datepicker-nav--title i {
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+
+.air-datepicker-nav {
+    border: none;
+}
+
+.-selected-.air-datepicker-cell.-year-.-other-decade-,
+.-selected-.air-datepicker-cell.-day-.-other-month-,
+.air-datepicker-cell.-selected-.-focus-,
+.air-datepicker-cell.-selected- {
+    color: #DA2128;
+    border-radius: 50%;
+    border: 1px solid #DA2128;
+    background: #fff;
+}
+
+.air-datepicker-cell {
+    font-family: 'Inter';
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+}
+
+.-event- {
+    position: relative;
+}
+
+.-event-::after {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    background-color: #DA2128;
+}

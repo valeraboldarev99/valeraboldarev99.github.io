@@ -924,3 +924,8 @@ body {
   width: 30%;
   margin: 20px auto;
 }
+
+.booking__calendar {
+  text-align: center;
+  margin: 40px 0;
+}
