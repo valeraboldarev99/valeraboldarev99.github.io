@@ -25,7 +25,7 @@
 		<form action="#">
             <div class="form__fields">
                 <div class="form__field">
-                    <label for="hours_count" class="modal__label">Продолдительность</label>
+                    <label for="hours_count" class="modal__label">Продолжительность</label>
                     <select name="hours_count" id="hours_count" class="modal__select">
                         <option value="1">1 час</option>
                         <option value="2">1 час 30 минут</option>
@@ -38,7 +38,13 @@
 
                 <div class="form__field">
                     <label for="players_count" class="modal__label">Количество игроков</label>
-                    <input class="modal__input" id="players_count" type="number" name="players_count" placeholder="Количество игроков" min="8" max="12" value="8">
+                    <select name="players_count" id="players_count" class="modal__select">
+                        <option value="1">8 человек</option>
+                        <option value="9">9 человек</option>
+                        <option value="10">10 человек</option>
+                        <option value="11">11 человек</option>
+                        <option value="12">12 человек</option>
+                    </select>
                 </div>
     
                 <div class="form__field">
